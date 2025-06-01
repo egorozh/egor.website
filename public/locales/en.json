@@ -1,0 +1,80 @@
+
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Egor Zheludkov",
+    "title": "Mobile & Desktop Developer",
+    "description": "Passionate developer with expertise in WPF, Xamarin, and Flutter. Founder of Ovdix startup.",
+    "cta": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "My name is Egor Zheludkov. I am a mobile and desktop developer. I started working in the IT industry in 2018 as a WPF developer. In early 2022, I transitioned to mobile development using Xamarin Native. Since the beginning of 2024, I've been working with Flutter. I am also the founder of a startup – Ovdix.",
+    "highlight": "Transforming ideas into powerful applications"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "categories": {
+      "mobile": "Mobile Development",
+      "desktop": "Desktop Development",
+      "languages": "Programming Languages",
+      "tools": "Tools & Technologies"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "ovdix": {
+      "title": "Ovdix",
+      "description": "Innovative startup platform that I founded, focusing on cutting-edge solutions for modern businesses.",
+      "tech": "Flutter, Mobile Development",
+      "link": "Visit Ovdix"
+    },
+    "xamarin": {
+      "title": "Xamarin Native Projects",
+      "description": "Cross-platform mobile applications built with Xamarin Native, delivering native performance across iOS and Android.",
+      "tech": "Xamarin Native, C#, Mobile"
+    },
+    "wpf": {
+      "title": "WPF Applications",
+      "description": "Desktop applications built with WPF, featuring rich user interfaces and robust functionality.",
+      "tech": "WPF, C#, .NET, Desktop"
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "timeline": [
+      {
+        "period": "2024 - Present",
+        "title": "Flutter Developer & Startup Founder",
+        "company": "Ovdix",
+        "description": "Leading mobile development with Flutter while founding and growing Ovdix startup."
+      },
+      {
+        "period": "2022 - 2024",
+        "title": "Mobile Developer",
+        "company": "Xamarin Native",
+        "description": "Specialized in cross-platform mobile development using Xamarin Native for iOS and Android."
+      },
+      {
+        "period": "2018 - 2022",
+        "title": "Desktop Developer",
+        "company": "WPF Development",
+        "description": "Started IT career developing desktop applications using WPF and .NET technologies."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Let's connect and discuss opportunities to work together.",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+}
