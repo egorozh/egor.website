@@ -32,6 +32,7 @@ const Header = () => {
     { key: 'skills', id: 'skills' },
     { key: 'projects', id: 'projects' },
     { key: 'experience', id: 'experience' },
+    { key: 'videos', id: 'videos' },
     { key: 'contact', id: 'contact' }
   ];
 

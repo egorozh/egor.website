@@ -5,6 +5,7 @@
     "skills": "Skills",
     "projects": "Projects",
     "experience": "Experience",
+    "videos": "Videos",
     "contact": "Contact"
   },
   "hero": {
@@ -69,6 +70,10 @@
         "description": "Started IT career developing desktop applications using WPF and .NET technologies."
       }
     ]
+  },
+  "videos": {
+    "title": "Development Videos",
+    "description": "Check out my YouTube channel where I share insights about mobile and desktop development."
   },
   "contact": {
     "title": "Get In Touch",
