@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -9,6 +9,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 const Header = () => {
   const { t } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -23,8 +24,8 @@ const Header = () => {
 
   const scrollToSection = (sectionId: string) => {
     if (location.pathname !== '/') {
-      // If not on home page, navigate to home first
-      window.location.href = `/#${sectionId}`;
+      // Navigate to home with hash
+      navigate(`/#${sectionId}`);
       return;
     }
     

@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
@@ -32,6 +31,11 @@ const Resume = () => {
   useEffect(() => {
     document.title = `${t('hero.name')} - ${t('resume.title')}`;
   }, [t]);
+
+  useEffect(() => {
+    // Reset scroll position to top when navigating to resume page
+    window.scrollTo(0, 0);
+  }, []);
 
   const skillsData = {
     mobile: ['Flutter', 'Xamarin Native', 'iOS Development', 'Android Development', 'Cross-platform'],

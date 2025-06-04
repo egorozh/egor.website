@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
@@ -14,10 +15,25 @@ import '@/i18n';
 
 const Index = () => {
   const { t } = useTranslation();
+  const location = useLocation();
 
   useEffect(() => {
     document.title = `${t('hero.name')} - ${t('hero.title')}`;
   }, [t]);
+
+  useEffect(() => {
+    // Handle hash-based scrolling when navigating from other pages
+    if (location.hash) {
+      const sectionId = location.hash.replace('#', '');
+      const element = document.getElementById(sectionId);
+      if (element) {
+        // Add a small delay to ensure the page has rendered
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location.hash]);
 
   return (
     <div className="min-h-screen bg-white">
