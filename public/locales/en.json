@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "about": "About",
@@ -6,7 +5,8 @@
     "projects": "Projects",
     "experience": "Experience",
     "videos": "Videos",
-    "contact": "Contact"
+    "contact": "Contact",
+    "resume": "Resume"
   },
   "hero": {
     "greeting": "Hello, I'm",
@@ -81,5 +81,98 @@
     "email": "Email",
     "github": "GitHub",
     "linkedin": "LinkedIn"
+  },
+  "resume": {
+    "title": "Resume",
+    "downloadPdf": "Download PDF",
+    "header": {
+      "title": "Mobile & Desktop Developer",
+      "location": "Remote"
+    },
+    "summary": {
+      "title": "Professional Summary",
+      "content": "Experienced mobile and desktop developer with 6+ years in the IT industry. Specialized in cross-platform development using Flutter, Xamarin Native, and WPF. Proven track record of building high-quality applications and founding successful startup ventures. Passionate about creating innovative solutions and staying current with emerging technologies."
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "mobile": "Mobile Development",
+      "desktop": "Desktop Development",
+      "languages": "Programming Languages",
+      "tools": "Tools & Technologies"
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "items": [
+        {
+          "title": "Flutter Developer & Startup Founder",
+          "company": "Ovdix",
+          "location": "Remote",
+          "period": "2024 - Present",
+          "responsibilities": [
+            "Founded and developed Ovdix startup platform from concept to deployment",
+            "Led mobile application development using Flutter framework",
+            "Implemented cross-platform solutions for iOS and Android",
+            "Managed product roadmap and technical architecture decisions"
+          ]
+        },
+        {
+          "title": "Mobile Developer",
+          "company": "Various Projects",
+          "location": "Remote",
+          "period": "2022 - 2024",
+          "responsibilities": [
+            "Developed cross-platform mobile applications using Xamarin Native",
+            "Delivered native performance across iOS and Android platforms",
+            "Collaborated with design teams to implement pixel-perfect UIs",
+            "Optimized application performance and user experience"
+          ]
+        },
+        {
+          "title": "Desktop Developer",
+          "company": "Various Projects",
+          "location": "Remote",
+          "period": "2018 - 2022",
+          "responsibilities": [
+            "Built desktop applications using WPF and .NET technologies",
+            "Implemented MVVM architecture patterns",
+            "Created rich user interfaces with complex data visualization",
+            "Maintained and upgraded legacy desktop applications"
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Key Projects",
+      "items": [
+        {
+          "name": "Ovdix Platform",
+          "description": "Innovative startup platform focusing on cutting-edge business solutions",
+          "technologies": "Flutter, Mobile Development, Cross-platform"
+        },
+        {
+          "name": "Enterprise Mobile Apps",
+          "description": "Cross-platform mobile applications with native performance",
+          "technologies": "Xamarin Native, C#, iOS, Android"
+        },
+        {
+          "name": "Desktop Business Applications",
+          "description": "Rich desktop applications with complex data management",
+          "technologies": "WPF, C#, .NET, MVVM"
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "items": [
+        {
+          "language": "Russian",
+          "level": "Native"
+        },
+        {
+          "language": "English",
+          "level": "Professional"
+        }
+      ]
+    }
   }
 }

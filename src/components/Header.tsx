@@ -1,12 +1,14 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Header = () => {
   const { t } = useTranslation();
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -20,6 +22,12 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      // If not on home page, navigate to home first
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -28,12 +36,13 @@ const Header = () => {
   };
 
   const navItems = [
-    { key: 'about', id: 'about' },
-    { key: 'skills', id: 'skills' },
-    { key: 'projects', id: 'projects' },
-    { key: 'experience', id: 'experience' },
-    { key: 'videos', id: 'videos' },
-    { key: 'contact', id: 'contact' }
+    { key: 'about', id: 'about', isExternal: false },
+    { key: 'skills', id: 'skills', isExternal: false },
+    { key: 'projects', id: 'projects', isExternal: false },
+    { key: 'experience', id: 'experience', isExternal: false },
+    { key: 'videos', id: 'videos', isExternal: false },
+    { key: 'contact', id: 'contact', isExternal: false },
+    { key: 'resume', id: '/resume', isExternal: true }
   ];
 
   return (
@@ -44,25 +53,35 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <img
               src="/lovable-uploads/016ddcf3-b80d-4f9b-a0f5-55d3e4992b2c.png"
               alt="Egor Zheludkov Logo"
               className="h-10 w-10 rounded-full object-cover"
             />
             <span className="text-xl font-bold text-gray-900">Egor Zheludkov</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <button
-                key={item.key}
-                onClick={() => scrollToSection(item.id)}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
-              >
-                {t(`nav.${item.key}`)}
-              </button>
+              item.isExternal ? (
+                <Link
+                  key={item.key}
+                  to={item.id}
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                >
+                  {t(`nav.${item.key}`)}
+                </Link>
+              ) : (
+                <button
+                  key={item.key}
+                  onClick={() => scrollToSection(item.id)}
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                >
+                  {t(`nav.${item.key}`)}
+                </button>
+              )
             ))}
           </nav>
 
@@ -86,13 +105,24 @@ const Header = () => {
           <nav className="md:hidden mt-4 pb-4 border-t pt-4">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <button
-                  key={item.key}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-left text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2"
-                >
-                  {t(`nav.${item.key}`)}
-                </button>
+                item.isExternal ? (
+                  <Link
+                    key={item.key}
+                    to={item.id}
+                    className="text-left text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {t(`nav.${item.key}`)}
+                  </Link>
+                ) : (
+                  <button
+                    key={item.key}
+                    onClick={() => scrollToSection(item.id)}
+                    className="text-left text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2"
+                  >
+                    {t(`nav.${item.key}`)}
+                  </button>
+                )
               ))}
             </div>
           </nav>
