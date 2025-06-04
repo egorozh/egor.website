@@ -3,8 +3,17 @@ import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Calendar, MapPin } from 'lucide-react';
 
+interface TimelineItem {
+  period: string;
+  title: string;
+  company: string;
+  description: string;
+}
+
 const Experience = () => {
   const { t } = useTranslation();
+
+  const timelineItems = t('experience.timeline', { returnObjects: true }) as TimelineItem[];
 
   return (
     <section id="experience" className="py-20 bg-gray-50">
@@ -20,7 +29,7 @@ const Experience = () => {
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 to-purple-600 hidden md:block"></div>
 
             <div className="space-y-8">
-              {t('experience.timeline', { returnObjects: true }).map((item: any, index: number) => (
+              {timelineItems.map((item, index) => (
                 <div key={index} className="relative">
                   {/* Timeline dot */}
                   <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full border-4 border-white shadow-lg hidden md:block"></div>
