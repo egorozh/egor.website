@@ -103,7 +103,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t pt-4">
+          <nav className="md:hidden mt-4 pb-4 border-t pt-4 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg -mx-4 px-4">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 item.isExternal ? (
