@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "about": "About",
@@ -138,6 +139,19 @@
             "Created rich user interfaces with complex data visualization",
             "Maintained and upgraded legacy desktop applications"
           ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "degree": "Master's Degree",
+          "university": "ITMO University",
+          "location": "Saint Petersburg",
+          "period": "2016 - 2018",
+          "faculty": "Faculty of Laser and Light Engineering",
+          "specialization": "Quality control of rocket and space system components"
         }
       ]
     },
