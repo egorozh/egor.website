@@ -105,39 +105,52 @@
       "title": "Professional Experience",
       "items": [
         {
-          "title": "Flutter Developer & Startup Founder",
-          "company": "Ovdix",
-          "location": "Remote",
-          "period": "2024 - Present",
-          "responsibilities": [
-            "Founded and developed Ovdix startup platform from concept to deployment",
-            "Led mobile application development using Flutter framework",
-            "Implemented cross-platform solutions for iOS and Android",
-            "Managed product roadmap and technical architecture decisions"
+          "title": "Middle/Senior Mobile Developer",
+          "company": "DD Planet",
+          "location": "Saint Petersburg (remote)",
+          "period": "January 2022 - Present",
+          "projects": [
+            {
+              "name": "MusorOFF (Flutter)",
+              "responsibilities": [
+                "Integrated Yandex Maps into the client app",
+                "Implemented lazy screen update mechanism",
+                "Added logic for attaching photos to orders",
+                "Refactored and extracted shared logic into reusable modules for both courier and client apps",
+                "Implemented push notification handling"
+              ]
+            },
+            {
+              "name": "Vmeste.ru (Xamarin.Android / .NET for Android)",
+              "responsibilities": [
+                "Complete redesign with custom control development",
+                "Reactions on posts: implemented reaction storage, updating, and sync",
+                "Introduced naming standards across all business processes",
+                "Added stories functionality",
+                "Implemented welcome stickers in house chats on first message",
+                "Regular collaboration with designers and PMs to find optimal implementation solutions",
+                "Migrated project to latest .NET and MvvmCross versions",
+                "Developed wrapper for native Android library to create sticker carousel"
+              ]
+            }
           ]
         },
         {
-          "title": "Mobile Developer",
-          "company": "Various Projects",
-          "location": "Remote",
-          "period": "2022 - 2024",
-          "responsibilities": [
-            "Developed cross-platform mobile applications using Xamarin Native",
-            "Delivered native performance across iOS and Android platforms",
-            "Collaborated with design teams to implement pixel-perfect UIs",
-            "Optimized application performance and user experience"
-          ]
-        },
-        {
-          "title": "Desktop Developer",
-          "company": "Various Projects",
-          "location": "Remote",
-          "period": "2018 - 2022",
-          "responsibilities": [
-            "Built desktop applications using WPF and .NET technologies",
-            "Implemented MVVM architecture patterns",
-            "Created rich user interfaces with complex data visualization",
-            "Maintained and upgraded legacy desktop applications"
+          "title": "Middle Desktop Developer",
+          "company": "Kompleksnye Sistemy LLC",
+          "location": "Saint Petersburg",
+          "period": "March 2018 - December 2021",
+          "projects": [
+            {
+              "name": "AKIM – Simulation modeling suite for physical security systems",
+              "responsibilities": [
+                "Designed and implemented plugin-based application architecture",
+                "Created a vector-based rendering engine for facility layout planning",
+                "Developed a heuristic pathfinding algorithm for agent simulation",
+                "Built a low-level C# wrapper around a simulation engine written in Delphi (AnyDynamic)",
+                "Added 3D visualization support for plans using Helix3DToolkit"
+              ]
+            }
           ]
         }
       ]
