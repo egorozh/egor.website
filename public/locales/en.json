@@ -155,6 +155,21 @@
         }
       ]
     },
+    "articles": {
+      "title": "Published Articles",
+      "items": [
+        {
+          "year": "2024",
+          "title": "First look at migrating from Xamarin Native to Flutter",
+          "link": "https://habr.com/ru/articles/796147/"
+        },
+        {
+          "year": "2025",
+          "title": "Simple localization of .NET applications using Slang.Net",
+          "link": "https://habr.com/ru/articles/874066/"
+        }
+      ]
+    },
     "projects": {
       "title": "Key Projects",
       "items": [
