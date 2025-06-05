@@ -1,44 +1,19 @@
+
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Download, Mail, Github, Linkedin, MapPin } from 'lucide-react';
+import { Download } from 'lucide-react';
 import Header from '@/components/Header';
+import ResumeHeader from '@/components/resume/ResumeHeader';
+import ResumeSummary from '@/components/resume/ResumeSummary';
+import ResumeSkills from '@/components/resume/ResumeSkills';
+import ResumeExperience from '@/components/resume/ResumeExperience';
+import ResumeEducation from '@/components/resume/ResumeEducation';
+import ResumeArticles from '@/components/resume/ResumeArticles';
+import ResumeProjects from '@/components/resume/ResumeProjects';
+import ResumeLanguages from '@/components/resume/ResumeLanguages';
 import '@/i18n';
-
-interface ExperienceItem {
-  title: string;
-  company: string;
-  location: string;
-  period: string;
-  responsibilities: string[];
-}
-
-interface ProjectItem {
-  name: string;
-  description: string;
-  technologies: string;
-}
-
-interface LanguageItem {
-  language: string;
-  level: string;
-}
-
-interface EducationItem {
-  degree: string;
-  university: string;
-  location: string;
-  period: string;
-  faculty: string;
-  specialization: string;
-}
-
-interface ArticleItem {
-  year: string;
-  title: string;
-  link: string;
-}
 
 const Resume = () => {
   const { t } = useTranslation();
@@ -51,13 +26,6 @@ const Resume = () => {
     // Reset scroll position to top when navigating to resume page
     window.scrollTo(0, 0);
   }, []);
-
-  const skillsData = {
-    mobile: ['Flutter', 'Xamarin Native', 'iOS Development', 'Android Development', 'Cross-platform'],
-    desktop: ['WPF', '.NET Framework', '.NET Core', 'MVVM', 'Avalonia'],
-    languages: ['C#', 'Dart', 'XAML', 'JavaScript', 'TypeScript'],
-    tools: ['Visual Studio', 'VS Code', 'Git', 'Azure DevOps', 'Firebase']
-  };
 
   const handleDownloadPDF = () => {
     // Generate PDF from page content
@@ -72,12 +40,6 @@ const Resume = () => {
       window.location.reload();
     }
   };
-
-  const experienceItems = t('resume.experience.items', { returnObjects: true }) as ExperienceItem[];
-  const projectItems = t('resume.projects.items', { returnObjects: true }) as ProjectItem[];
-  const languageItems = t('resume.languages.items', { returnObjects: true }) as LanguageItem[];
-  const educationItems = t('resume.education.items', { returnObjects: true }) as EducationItem[];
-  const articleItems = t('resume.articles.items', { returnObjects: true }) as ArticleItem[];
 
   return (
     <div className="min-h-screen bg-white">
@@ -103,179 +65,14 @@ const Resume = () => {
           <div id="resume-content">
             <Card className="bg-white shadow-lg print:shadow-none print:border-none">
               <CardContent className="p-8">
-                {/* Header Section */}
-                <div className="text-center mb-8 border-b pb-6 print:border-b-2 print:border-gray-300">
-                  <h1 className="text-4xl font-bold text-gray-900 mb-2 print:text-3xl">{t('hero.name')}</h1>
-                  <h2 className="text-xl text-blue-600 font-semibold mb-4 print:text-lg print:text-gray-700">{t('resume.header.title')}</h2>
-                  
-                  <div className="flex flex-wrap justify-center gap-6 text-gray-600 print:gap-4 print:text-sm">
-                    <div className="flex items-center gap-2">
-                      <MapPin className="h-4 w-4" />
-                      <span>{t('resume.header.location')}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Mail className="h-4 w-4" />
-                      <span>egorozh.dev@gmail.com</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Github className="h-4 w-4" />
-                      <span>github.com/egorozh</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Linkedin className="h-4 w-4" />
-                      <span>linkedin.com/in/egorozh</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Professional Summary */}
-                <section className="mb-8 print:mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 border-b-2 border-blue-600 pb-1 print:text-lg print:border-gray-300">
-                    {t('resume.summary.title')}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed print:text-sm">
-                    {t('resume.summary.content')}
-                  </p>
-                </section>
-
-                {/* Technical Skills */}
-                <section className="mb-8 print:mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 border-b-2 border-blue-600 pb-1 print:text-lg print:border-gray-300">
-                    {t('resume.skills.title')}
-                  </h3>
-                  <div className="grid md:grid-cols-2 gap-4 print:gap-2">
-                    {Object.entries(skillsData).map(([category, skills]) => (
-                      <div key={category}>
-                        <h4 className="font-semibold text-gray-800 mb-2 print:text-sm">
-                          {t(`resume.skills.${category}`)}
-                        </h4>
-                        <div className="flex flex-wrap gap-2 print:gap-1">
-                          {skills.map((skill, index) => (
-                            <span
-                              key={index}
-                              className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm print:px-2 print:py-0 print:text-xs print:bg-transparent print:border print:border-gray-300"
-                            >
-                              {skill}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-
-                {/* Professional Experience */}
-                <section className="mb-8 print:mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 border-b-2 border-blue-600 pb-1 print:text-lg print:border-gray-300">
-                    {t('resume.experience.title')}
-                  </h3>
-                  <div className="space-y-6 print:space-y-4">
-                    {experienceItems.map((item, index) => (
-                      <div key={index} className="border-l-4 border-blue-200 pl-4 print:border-gray-300 print:pl-3">
-                        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                          <div>
-                            <h4 className="text-lg font-semibold text-gray-900 print:text-base">{item.title}</h4>
-                            <p className="text-blue-600 font-medium print:text-gray-700 print:text-sm">{item.company}</p>
-                          </div>
-                          <div className="text-gray-600 text-sm md:text-right print:text-xs">
-                            <p>{item.period}</p>
-                            <p>{item.location}</p>
-                          </div>
-                        </div>
-                        <ul className="list-disc list-inside text-gray-700 space-y-1 print:space-y-0">
-                          {item.responsibilities.map((resp, respIndex) => (
-                            <li key={respIndex} className="text-sm print:text-xs">{resp}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-
-                {/* Education */}
-                <section className="mb-8 print:mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 border-b-2 border-blue-600 pb-1 print:text-lg print:border-gray-300">
-                    {t('resume.education.title')}
-                  </h3>
-                  <div className="space-y-4 print:space-y-3">
-                    {educationItems.map((item, index) => (
-                      <div key={index} className="border-l-4 border-purple-200 pl-4 print:border-gray-300 print:pl-3">
-                        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                          <div>
-                            <h4 className="text-lg font-semibold text-gray-900 print:text-base">{item.degree}</h4>
-                            <p className="text-blue-600 font-medium print:text-gray-700 print:text-sm">{item.university}</p>
-                          </div>
-                          <div className="text-gray-600 text-sm md:text-right print:text-xs">
-                            <p>{item.period}</p>
-                            <p>{item.location}</p>
-                          </div>
-                        </div>
-                        <p className="text-gray-700 text-sm mb-1 print:text-xs">{item.faculty}</p>
-                        <p className="text-gray-600 text-sm print:text-xs">{item.specialization}</p>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-
-                {/* Published Articles */}
-                <section className="mb-8 print:mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 border-b-2 border-blue-600 pb-1 print:text-lg print:border-gray-300">
-                    {t('resume.articles.title')}
-                  </h3>
-                  <div className="space-y-4 print:space-y-3">
-                    {articleItems.map((article, index) => (
-                      <div key={index} className="border-l-4 border-orange-200 pl-4 print:border-gray-300 print:pl-3">
-                        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                          <div>
-                            <h4 className="text-lg font-semibold text-gray-900 print:text-base">{article.title}</h4>
-                            <a 
-                              href={article.link} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="text-blue-600 hover:text-blue-800 underline text-sm print:text-gray-700 print:no-underline print:text-xs"
-                            >
-                              {article.link}
-                            </a>
-                          </div>
-                          <div className="text-gray-600 text-sm md:text-right print:text-xs">
-                            <p>{article.year}</p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-
-                {/* Key Projects */}
-                <section className="mb-8 print:mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 border-b-2 border-blue-600 pb-1 print:text-lg print:border-gray-300">
-                    {t('resume.projects.title')}
-                  </h3>
-                  <div className="space-y-4 print:space-y-3">
-                    {projectItems.map((project, index) => (
-                      <div key={index} className="border-l-4 border-green-200 pl-4 print:border-gray-300 print:pl-3">
-                        <h4 className="text-lg font-semibold text-gray-900 print:text-base">{project.name}</h4>
-                        <p className="text-gray-700 mb-2 print:text-sm print:mb-1">{project.description}</p>
-                        <p className="text-sm text-blue-600 font-medium print:text-xs print:text-gray-600">{project.technologies}</p>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-
-                {/* Languages */}
-                <section>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 border-b-2 border-blue-600 pb-1 print:text-lg print:border-gray-300">
-                    {t('resume.languages.title')}
-                  </h3>
-                  <div className="grid md:grid-cols-2 gap-4 print:gap-2">
-                    {languageItems.map((lang, index) => (
-                      <div key={index} className="flex justify-between items-center">
-                        <span className="font-medium text-gray-800 print:text-sm">{lang.language}</span>
-                        <span className="text-gray-600 print:text-sm">{lang.level}</span>
-                      </div>
-                    ))}
-                  </div>
-                </section>
+                <ResumeHeader />
+                <ResumeSummary />
+                <ResumeSkills />
+                <ResumeExperience />
+                <ResumeEducation />
+                <ResumeArticles />
+                <ResumeProjects />
+                <ResumeLanguages />
               </CardContent>
             </Card>
           </div>
@@ -365,6 +162,9 @@ const Resume = () => {
           }
           .print\\:border { 
             border-width: 1px !important; 
+          }
+          .print\\:no-underline { 
+            text-decoration: none !important; 
           }
           .bg-gray-50 { 
             background: white !important; 
