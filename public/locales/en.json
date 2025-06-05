@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "about": "About",
@@ -187,19 +186,28 @@
       "title": "Key Projects",
       "items": [
         {
-          "name": "Ovdix Platform",
-          "description": "Innovative startup platform focusing on cutting-edge business solutions",
-          "technologies": "Flutter, Mobile Development, Cross-platform"
+          "name": "Ovdix",
+          "description": "A multilingual classifieds platform that enables users to buy, sell, and exchange goods and services across Eastern Europe. With instant translation powered by GPT-4o-mini, listings and chat messages are automatically translated into your preferred language.",
+          "technologies": "Flutter, Mobile Development, Cross-platform, AI Translation",
+          "link": "https://ovdix.com"
         },
         {
-          "name": "Enterprise Mobile Apps",
-          "description": "Cross-platform mobile applications with native performance",
-          "technologies": "Xamarin Native, C#, iOS, Android"
+          "name": "Slang.NET",
+          "description": "A new approach to localization in .NET, offering many convenient features compared to traditional methods.",
+          "technologies": "C#, .NET, Localization",
+          "link": "https://github.com/egorozh/Slang.NET"
         },
         {
-          "name": "Desktop Business Applications",
-          "description": "Rich desktop applications with complex data management",
-          "technologies": "WPF, C#, .NET, MVVM"
+          "name": "Tabalonia",
+          "description": "A control library for building cross-platform tabbed interfaces using Avalonia UI.",
+          "technologies": "C#, Avalonia UI, Desktop",
+          "link": "https://github.com/egorozh/Tabalonia"
+        },
+        {
+          "name": "XFiler",
+          "description": "A modern file manager for macOS and Windows with integrated Yandex Disk support.",
+          "technologies": "C#, .NET, Desktop, Cloud Storage",
+          "link": "https://x-filer.com/"
         }
       ]
     },
