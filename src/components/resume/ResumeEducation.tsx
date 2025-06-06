@@ -8,6 +8,7 @@ interface EducationItem {
   period: string;
   faculty: string;
   specialization: string;
+  honors?: string;
 }
 
 const ResumeEducation = () => {
@@ -34,6 +35,9 @@ const ResumeEducation = () => {
             </div>
             <p className="text-gray-700 text-sm mb-1 print:text-xs">{item.faculty}</p>
             <p className="text-gray-600 text-sm print:text-xs">{item.specialization}</p>
+            {item.honors && (
+              <p className="text-green-600 text-sm font-medium mt-1 print:text-gray-700 print:text-xs">{item.honors}</p>
+            )}
           </div>
         ))}
       </div>

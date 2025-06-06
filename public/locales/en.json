@@ -1,3 +1,4 @@
+
 {
   "footer": {
     "name": "Egor Zheludkov",
@@ -184,7 +185,8 @@
           "location": "Saint Petersburg",
           "period": "2016 - 2018",
           "faculty": "Faculty of Laser and Light Engineering",
-          "specialization": "Quality control of rocket and space system components"
+          "specialization": "Quality control of rocket and space system components",
+          "honors": "Graduated with honors (red diploma)"
         }
       ]
     },
