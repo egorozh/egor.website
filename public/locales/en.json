@@ -1,12 +1,19 @@
 {
-  "nav": {
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "experience": "Experience",
-    "videos": "Videos",
-    "contact": "Contact",
-    "resume": "Resume"
+  "footer": {
+    "name": "Egor Zheludkov",
+    "copyright": "© 2025 Egor Zheludkov. All rights reserved."
+  },
+  "header": {
+    "name": "Egor Zheludkov",
+    "nav": {
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience",
+      "videos": "Videos",
+      "contact": "Contact",
+      "resume": "Resume"
+    }
   },
   "hero": {
     "greeting": "Hello, I'm",
@@ -18,7 +25,21 @@
   "about": {
     "title": "About Me",
     "description": "My name is Egor Zheludkov. I am a mobile and desktop developer. I started working in the IT industry in 2018 as a WPF developer. In early 2022, I transitioned to mobile development using Xamarin Native. Since the beginning of 2024, I've been working with Flutter. I am also the founder of a startup – Ovdix.",
-    "highlight": "Transforming ideas into powerful applications"
+    "highlight": "Transforming ideas into powerful applications",
+    "cards": [
+      {
+        "title": "WPF Development",
+        "description": "Started IT journey in 2018 building desktop applications"
+      },
+      {
+        "title": "Mobile Development",
+        "description": "Transitioned to Xamarin Native in 2022, now using Flutter"
+      },
+      {
+        "title": "Entrepreneurship",
+        "description": "Founder of Ovdix startup, creating innovative solutions"
+      }
+    ]
   },
   "skills": {
     "title": "Technical Skills",
@@ -33,8 +54,8 @@
     "title": "Featured Projects",
     "ovdix": {
       "title": "Ovdix",
-      "description": "Innovative startup platform that I founded, focusing on cutting-edge solutions for modern businesses.",
-      "tech": "Flutter, Mobile Development",
+      "description": "A multilingual classifieds platform that enables users to buy, sell, and exchange goods and services across Eastern Europe.",
+      "tech": "Flutter, Supabase, Firebase, InApp Purchases, Push Notifications",
       "link": "Visit Ovdix"
     },
     "xamarin": {
@@ -43,9 +64,9 @@
       "tech": "Xamarin Native, C#, Mobile"
     },
     "wpf": {
-      "title": "WPF Applications",
-      "description": "Desktop applications built with WPF, featuring rich user interfaces and robust functionality.",
-      "tech": "WPF, C#, .NET, Desktop"
+      "title": "Avalonia Applications",
+      "description": "Desktop applications built with Avalonia, featuring rich user interfaces and robust functionality.",
+      "tech": "AvaloniaUI, WPF, C#, .NET, Desktop"
     }
   },
   "experience": {
@@ -220,7 +241,7 @@
         },
         {
           "language": "English",
-          "level": "Professional"
+          "level": "A2"
         }
       ]
     }

@@ -15,7 +15,7 @@ const Skills = () => {
     {
       title: t('skills.categories.desktop'),
       icon: '💻',
-      skills: ['WPF', '.NET Framework', '.NET Core', 'MVVM', 'Desktop Applications'],
+      skills: ['WPF', 'Avalonia', '.NET Core', 'MVVM', 'Desktop Applications'],
       color: 'from-purple-500 to-pink-500'
     },
     {
