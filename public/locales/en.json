@@ -159,7 +159,7 @@
               ]
             },
             {
-              "name": "Secret Project under NDL",
+              "name": "Secret Project under NDA",
               "responsibilities": [
                 "Complete refactoring of legacy code to Clean Architecture",
                 "Geolocation collection and coordinate binding to photo report metadata",
