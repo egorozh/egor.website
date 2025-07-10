@@ -15,10 +15,10 @@ const ResumeSkills = () => {
       <h3 className="text-xl font-bold text-gray-900 mb-4 border-b-2 border-blue-600 pb-1 print:text-lg print:border-gray-300">
         {t('resume.skills.title')}
       </h3>
-      <div className="grid md:grid-cols-2 gap-4 print:gap-2">
+      <div className="space-y-4 print:space-y-3">
         {Object.entries(skillsData).map(([category, skills]) => (
           <div key={category}>
-            <h4 className="font-semibold text-gray-800 mb-2 print:text-sm">
+            <h4 className="font-semibold text-gray-800 mb-2 print:text-sm print:mb-1">
               {t(`resume.skills.${category}`)}
             </h4>
             <div className="flex flex-wrap gap-2 print:gap-1">
