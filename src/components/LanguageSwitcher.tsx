@@ -1,78 +1,74 @@
+import React, {useState} from 'react';
 
-import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Button } from '@/components/ui/button';
-import { ChevronDown } from 'lucide-react';
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger
+} from '@/components/ui/dropdown-menu';
+import {Button} from '@/components/ui/button';
+import {Globe} from 'lucide-react';
+import {useLanguageWithI18n} from '@/hooks/useLanguageWithI18n';
+import {Language} from "@/i18n";
+
+const languages = [
+    {code: 'en', name: 'English', flag: '🇺🇸'},
+    {code: 'ru', name: 'Русский', flag: '🇷🇺'}
+];
 
 const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState(i18n.language);
+    const {currentLanguage, setLanguage} = useLanguageWithI18n();
 
-  const languages = [
-    { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'ru', name: 'Русский', flag: '🇷🇺' }
-  ];
+    const [isOpen, setIsOpen] = useState(false);
 
-  // Sync with i18next language changes
-  useEffect(() => {
-    const handleLanguageChange = (lng: string) => {
-      setCurrentLang(lng);
+    const getCurrentFlag = () => {
+        return languages.find(lang => lang.code === currentLanguage)?.flag || '🌐';
     };
 
-    // Listen for language changes
-    i18n.on('languageChanged', handleLanguageChange);
+    const handleLanguageChange = (langCode: string) => {
+        let lang: Language = "en";
 
-    // Set initial language
-    setCurrentLang(i18n.language);
+        switch (langCode) {
+            case 'en':
+                lang = "en"
+                break;
+            case 'ru':
+                lang = "ru"
+                break;
+        }
 
-    return () => {
-      i18n.off('languageChanged', handleLanguageChange);
+        setLanguage(lang);
+        setIsOpen(false);
     };
-  }, [i18n]);
 
-  const currentLanguage = languages.find(lang => lang.code === currentLang) || languages[0];
-
-  const handleLanguageChange = async (langCode: string) => {
-    try {
-      await i18n.changeLanguage(langCode);
-      setCurrentLang(langCode);
-      setIsOpen(false);
-    } catch (error) {
-      console.error('Failed to change language:', error);
-    }
-  };
-
-  return (
-    <div className="relative">
-      <Button
-        variant="outline"
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2"
-      >
-        <span>{currentLanguage.flag}</span>
-        <span className="hidden sm:inline">{currentLanguage.name}</span>
-        <ChevronDown className="h-4 w-4" />
-      </Button>
-
-      {isOpen && (
-        <div className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg z-50 border">
-          {languages.map((language) => (
-            <button
-              key={language.code}
-              onClick={() => handleLanguageChange(language.code)}
-              className={`w-full px-4 py-2 text-left hover:bg-gray-100 flex items-center gap-2 transition-colors first:rounded-t-md last:rounded-b-md ${
-                language.code === currentLang ? 'bg-blue-50 text-blue-600' : ''
-              }`}
-            >
-              <span>{language.flag}</span>
-              <span>{language.name}</span>
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
-  );
+    return (
+        <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
+            <DropdownMenuTrigger asChild>
+                <Button
+                    variant="ghost"
+                    size="sm"
+                    className="flex items-center gap-2 px-3 hover:bg-ovdix-beige/20"
+                >
+                    <Globe size={16}/>
+                    <span>{getCurrentFlag()}</span>
+                </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="min-w-[150px]">
+                {languages.map((lang) => (
+                    <DropdownMenuItem
+                        key={lang.code}
+                        onClick={() => handleLanguageChange(lang.code)}
+                        className={`flex items-center gap-2 cursor-pointer ${
+                            currentLanguage === lang.code ? 'bg-ovdix-beige/30' : ''
+                        }`}
+                    >
+                        <span>{lang.flag}</span>
+                        <span>{lang.name}</span>
+                    </DropdownMenuItem>
+                ))}
+            </DropdownMenuContent>
+        </DropdownMenu>
+    );
 };
 
 export default LanguageSwitcher;
