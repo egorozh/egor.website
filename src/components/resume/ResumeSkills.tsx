@@ -5,8 +5,7 @@ const ResumeSkills = () => {
   const { t } = useTranslation();
 
   const skillsData = {
-    mobile: ['Flutter', 'Xamarin Native', 'iOS Development', 'Android Development', 'Cross-platform'],
-    desktop: ['WPF', '.NET Framework', '.NET Core', 'MVVM', 'Avalonia'],
+    mobile: ['Flutter', 'Xamarin Native', 'iOS Development', 'Android Development', 'Cross-platform', 'GetIt', 'Injectable', 'Supabase', 'Firebase', 'Google Services', 'Apple Services', 'flutter_chat_ui', 'Azure + Asp.Net.Core', 'Azure Key Vault', 'Provider', 'Bloc', 'Dio', 'Retrofit', 'Slang', 'freezed', 'auto_route', 'infinite_scroll_pagination', 'google_mobile_ads', 'appsflyer'],
     languages: ['C#', 'Dart', 'XAML', 'JavaScript', 'TypeScript'],
     tools: ['Visual Studio', 'VS Code', 'Git', 'Azure DevOps', 'Firebase']
   };

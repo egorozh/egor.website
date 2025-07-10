@@ -118,7 +118,6 @@
     "skills": {
       "title": "Technical Skills",
       "mobile": "Mobile Development",
-      "desktop": "Desktop Development",
       "languages": "Programming Languages",
       "tools": "Tools & Technologies"
     },
@@ -146,7 +145,7 @@
           ]
         },
         {
-          "title": "Middle/Senior Mobile Developer",
+          "title": "Senior/Lead Mobile Developer",
           "company": "DD Planet",
           "location": "Saint Petersburg (remote)",
           "period": "January 2022 - Present",
