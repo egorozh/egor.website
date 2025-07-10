@@ -113,7 +113,7 @@
     },
     "summary": {
       "title": "Professional Summary",
-      "content": "Experienced mobile and desktop developer with 6+ years in the IT industry. Specialized in cross-platform development using Flutter, Xamarin Native, and WPF. Proven track record of building high-quality applications and founding successful startup ventures. Passionate about creating innovative solutions and staying current with emerging technologies."
+      "content": "Experienced Flutter engineer who quickly adapts to any codebase and focuses on business results. I build productive relationships with designers, analysts, and managers, helping to focus on tasks that bring the most value. I practice 'small iterations': breaking features into tasks that can be completed in a day and immediately integrated into the build. I conduct thorough code reviews and provide detailed recommendations that improve code quality and team processes. My approach accelerates releases and reduces risks, allowing products to grow quickly and deliver value to the business."
     },
     "skills": {
       "title": "Technical Skills",
@@ -126,11 +126,47 @@
       "title": "Professional Experience",
       "items": [
         {
+          "title": "Founder & Lead Developer",
+          "company": "Ovdix",
+          "location": "Remote",
+          "period": "January 2025 - Present",
+          "projects": [
+            {
+              "name": "Ovdix Platform Development",
+              "responsibilities": [
+                "Working with Supabase / Firebase for backend infrastructure",
+                "Implementing In-App Purchases (backend + mobile)",
+                "Publishing to App Store and Google Play",
+                "Building custom chats with automatic translation via OpenAI (Supabase + flutter_chat_ui)",
+                "Integrating advertising, Google ID / Apple ID login, Google Maps Services, and AppsFlyer",
+                "Implementing Deep Links and sharing functionality",
+                "Related tasks: collaborating with designers, setting icon tasks, preparing publication materials, searching for testing team"
+              ]
+            }
+          ]
+        },
+        {
           "title": "Middle/Senior Mobile Developer",
           "company": "DD Planet",
           "location": "Saint Petersburg (remote)",
           "period": "January 2022 - Present",
           "projects": [
+            {
+              "name": "KDL — Medical Laboratory (Flutter)",
+              "responsibilities": [
+                "Implemented initial architecture and authorization logic",
+                "Biometric login — PIN code and fingerprint authentication",
+                "Receiving and displaying PDF test results"
+              ]
+            },
+            {
+              "name": "Secret Project under NDL",
+              "responsibilities": [
+                "Complete refactoring of legacy code to Clean Architecture",
+                "Geolocation collection and coordinate binding to photo report metadata",
+                "Camera module without ability to select images from gallery or fake camera"
+              ]
+            },
             {
               "name": "MusorOFF (Flutter)",
               "responsibilities": [
