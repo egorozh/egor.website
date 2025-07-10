@@ -10,12 +10,11 @@ export const useLanguageWithI18n = () => {
   const navigate = useNavigate();
   const currentLangParam = params.lang as Language | undefined;
 
-  // Check if current URL language is valid
+  // Always set language from URL parameter if it's valid
   useEffect(() => {
     if (currentLangParam && supportedLanguages.includes(currentLangParam)) {
-      if (i18n.language !== currentLangParam) {
-        i18n.changeLanguage(currentLangParam);
-      }
+      // Always change language to match URL, regardless of current i18n language
+      i18n.changeLanguage(currentLangParam);
     }
   }, [currentLangParam, i18n]);
 
