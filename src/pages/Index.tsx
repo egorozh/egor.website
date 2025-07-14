@@ -11,10 +11,11 @@ import Experience from '@/components/Experience';
 import Videos from '@/components/Videos';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import { useLanguageWithI18n } from '@/hooks/useLanguageWithI18n';
 import '@/i18n';
 
 const Index = () => {
-  const { t } = useTranslation();
+  const { t } = useLanguageWithI18n();
   const location = useLocation();
 
   useEffect(() => {
@@ -27,7 +28,7 @@ const Index = () => {
       const sectionId = location.hash.replace('#', '');
       const element = document.getElementById(sectionId);
       if (element) {
-        // Add a delay to ensure the page has rendered and remove hash from URL
+        // Add a delay to ensure the page has rendered completely
         setTimeout(() => {
           const headerHeight = 80; // Account for fixed header
           const elementPosition = element.getBoundingClientRect().top;
@@ -40,7 +41,7 @@ const Index = () => {
           
           // Clean up hash from URL after scroll
           window.history.replaceState(null, '', window.location.pathname);
-        }, 100);
+        }, 300); // Increased delay to ensure page is fully loaded
       }
     }
   }, [location.hash]);

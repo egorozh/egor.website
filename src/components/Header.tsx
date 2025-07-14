@@ -1,4 +1,3 @@
-
 import {useState, useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
 import {useLocation, Link, useNavigate} from 'react-router-dom';
@@ -23,9 +22,13 @@ const Header = () => {
     }, []);
 
     const scrollToSection = (sectionId: string) => {
-        if (location.pathname !== '/') {
+        // Check if we're on the home page (with or without language prefix)
+        const isHomePage = location.pathname === '/' || location.pathname.match(/^\/[a-z]{2}\/?$/);
+        
+        if (!isHomePage) {
             // Navigate to home with hash and scroll after navigation
-            navigate(`/#${sectionId}`);
+            const currentLang = location.pathname.match(/^\/([a-z]{2})/)?.[1] || 'en';
+            navigate(`/${currentLang}#${sectionId}`);
             return;
         }
 
