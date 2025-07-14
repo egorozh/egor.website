@@ -1,3 +1,4 @@
+
 import {useState, useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
 import {useLocation, Link, useNavigate} from 'react-router-dom';
@@ -23,14 +24,22 @@ const Header = () => {
 
     const scrollToSection = (sectionId: string) => {
         if (location.pathname !== '/') {
-            // Navigate to home with hash
+            // Navigate to home with hash and scroll after navigation
             navigate(`/#${sectionId}`);
             return;
         }
 
+        // If already on home page, scroll immediately
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({behavior: 'smooth'});
+            const headerHeight = 80; // Account for fixed header
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
             setIsMobileMenuOpen(false);
         }
     };

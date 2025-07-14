@@ -27,9 +27,19 @@ const Index = () => {
       const sectionId = location.hash.replace('#', '');
       const element = document.getElementById(sectionId);
       if (element) {
-        // Add a small delay to ensure the page has rendered
+        // Add a delay to ensure the page has rendered and remove hash from URL
         setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
+          const headerHeight = 80; // Account for fixed header
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+          
+          // Clean up hash from URL after scroll
+          window.history.replaceState(null, '', window.location.pathname);
         }, 100);
       }
     }
