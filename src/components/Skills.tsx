@@ -9,7 +9,7 @@ const Skills = () => {
     {
       title: t('skills.categories.mobile'),
       icon: '📱',
-      skills: ['Flutter', 'Xamarin Native', 'iOS Development', 'Android Development', 'Cross-platform'],
+      skills: ['Flutter', 'iOS Development', 'Android Development', 'Cross-platform'],
       color: 'from-blue-500 to-cyan-500'
     },
     {
@@ -21,7 +21,7 @@ const Skills = () => {
     {
       title: t('skills.categories.languages'),
       icon: '⚡',
-      skills: ['C#', 'Dart', 'XAML', 'JavaScript', 'TypeScript'],
+      skills: ['C#', 'Dart'],
       color: 'from-green-500 to-teal-500'
     },
     {

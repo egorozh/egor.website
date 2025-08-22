@@ -151,6 +151,15 @@
           "period": "January 2022 - Present",
           "projects": [
             {
+              "name": "Atom - Electric Vehicle Steering Wheel Prototype Development (Outstaffing)",
+              "responsibilities": [
+                "Implemented route finding logic to charging stations and other city locations, route building with gradient traffic display via Yandex MapKit, NavKit",
+                "Implemented complex animations in the project",
+                "Quickly got up to speed at the beginning of the project, managing to deliver new screens before the demo without any onboarding from colleagues (due to their absence)",
+                "Implemented quick action drawer display with custom swipe zones and more"
+              ]
+            },
+            {
               "name": "KDL — Medical Laboratory (Flutter)",
               "responsibilities": [
                 "Implemented initial architecture and authorization logic",
@@ -159,7 +168,7 @@
               ]
             },
             {
-              "name": "Secret Project under NDA",
+              "name": "Oil Industry Engineers Application",
               "responsibilities": [
                 "Complete refactoring of legacy code to Clean Architecture",
                 "Geolocation collection and coordinate binding to photo report metadata",
