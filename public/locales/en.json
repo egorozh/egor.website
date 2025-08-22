@@ -74,13 +74,13 @@
     "title": "Work Experience",
     "timeline": [
       {
-        "period": "2024 - Present",
+        "period": "2023 - Present",
         "title": "Flutter Developer & Startup Founder",
         "company": "Ovdix",
         "description": "Leading mobile development with Flutter while founding and growing Ovdix startup."
       },
       {
-        "period": "2022 - 2024",
+        "period": "2022",
         "title": "Mobile Developer",
         "company": "Xamarin Native",
         "description": "Specialized in cross-platform mobile development using Xamarin Native for iOS and Android."
@@ -108,7 +108,7 @@
     "title": "Resume",
     "downloadPdf": "Download PDF",
     "header": {
-      "title": "Senior/Lead Mobile Developer",
+      "title": "Flutter Developer",
       "location": "Remote"
     },
     "summary": {

@@ -7,7 +7,7 @@ const ResumeSkills = () => {
   const skillsData = {
     mobile: ['Flutter', 'iOS Development', 'Android Development', 'Cross-platform', 'GetIt', 'Injectable', 'Supabase', 'Firebase', 'Google Services', 'Apple Services', 'flutter_chat_ui', 'Azure + Asp.Net.Core', 'Azure Key Vault', 'Provider', 'Bloc', 'Dio', 'Retrofit', 'Slang', 'freezed', 'auto_route', 'infinite_scroll_pagination', 'google_mobile_ads', 'appsflyer'],
     languages: ['C#', 'Dart'],
-    tools: ['Visual Studio', 'VS Code', 'Git', 'Azure DevOps', 'Firebase']
+    tools: ['Android Studio', 'JetBrains Rider', 'Supabase','Git', 'Azure DevOps', 'Firebase']
   };
 
   return (
