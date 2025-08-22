@@ -1,4 +1,3 @@
-
 {
   "footer": {
     "name": "Egor Zheludkov",
@@ -17,28 +16,28 @@
     }
   },
   "hero": {
-    "greeting": "Hello, I'm",
+    "greeting": "Hi, I’m",
     "name": "Egor Zheludkov",
-    "title": "Mobile & Desktop Developer",
-    "description": "Passionate developer with expertise in Avalonia, Xamarin, and Flutter. Founder of Ovdix startup.",
-    "cta": "Get In Touch"
+    "title": "Senior Flutter Developer",
+    "description": "Senior Flutter engineer with end-to-end experience — from idea and architecture to release and analytics. Creator of Ovdix and VertoChat; I ramp up quickly into any codebase, speed up releases, and improve stability.",
+    "cta": "Get in touch"
   },
   "about": {
-    "title": "About Me",
-    "description": "My name is Egor Zheludkov. I am a mobile and desktop developer. I started working in the IT industry in 2018 as a WPF developer. In early 2022, I transitioned to mobile development using Xamarin Native. Since the beginning of 2024, I've been working with Flutter. I am also the founder of a startup – Ovdix.",
-    "highlight": "Transforming ideas into powerful applications",
+    "title": "About",
+    "description": "I’m a Senior Flutter developer with a strong product focus. Building commercial apps since 2018 (desktop → mobile since 2022). I take products from 0 to release: architecture (Clean Architecture), state (BLoC), navigation (auto_route), integrations (Firebase/Maps/IAP/Push), CI/CD (GitHub Actions), analytics (Crashlytics/Analytics/AppsFlyer). Founder of the side projects Ovdix and VertoChat.",
+    "highlight": "Ship business value in short iterations",
     "cards": [
       {
-        "title": "WPF Development",
-        "description": "Started IT journey in 2018 building desktop applications"
+        "title": "Flutter",
+        "description": "Performance, stability, readable architecture"
       },
       {
-        "title": "Mobile Development",
-        "description": "Transitioned to Xamarin Native in 2022, now using Flutter"
+        "title": "0→1 & growth",
+        "description": "Store releases, metrics, feedback, and fast loops"
       },
       {
-        "title": "Entrepreneurship",
-        "description": "Founder of Ovdix startup, creating innovative solutions"
+        "title": "Tech-lead mindset",
+        "description": "Code reviews, mentoring, smart task breakdown"
       }
     ]
   },
@@ -55,18 +54,24 @@
     "title": "Featured Projects",
     "ovdix": {
       "title": "Ovdix",
-      "description": "A multilingual classifieds platform that enables users to buy, sell, and exchange goods and services across Eastern Europe.",
-      "tech": "Flutter, Supabase, Firebase, InApp Purchases, Push Notifications",
+      "description": "Launched a classifieds marketplace from scratch with auto-translation. Built the architecture, developed the mobile app, set up IAP, push, deep links, analytics, and store releases → regular updates with no downtime and no crash-free degradation.",
+      "tech": "Flutter, Dart, Clean Architecture, BLoC, Supabase, Firebase (Auth/Crashlytics/Analytics), In-App Purchases, Push, Deep Links, Maps, AppsFlyer, CI/CD",
       "link": "Visit Ovdix"
     },
+    "vertochat": {
+      "title": "VertoChat",
+      "description": "Messenger with local/p2p/group chats and neural text/voice translation. Designed the protocol, implemented platform channels for audio, and optimized streaming → smooth animations, low latency, and stability on budget devices.",
+      "tech": "Flutter, Platform Channels, Audio, OpenAI translation, Firebase, Push, In-App Purchases, CI/CD",
+      "link": "Visit VertoChat"
+    },
     "xamarin": {
-      "title": "Xamarin Native Projects",
-      "description": "Cross-platform mobile applications built with Xamarin Native, delivering native performance across iOS and Android.",
-      "tech": "Xamarin Native, C#, Mobile"
+      "title": "Flutter Projects",
+      "description": "Cross-platform apps focused on UX and performance: optimized render trees, no jank, predictable routing, and caching.",
+      "tech": "Flutter, Dart, Mobile"
     },
     "wpf": {
-      "title": "Avalonia Applications",
-      "description": "Desktop applications built with Avalonia, featuring rich user interfaces and robust functionality.",
+      "title": "Avalonia Apps",
+      "description": "Desktop solutions with modular architecture and rich UIs. I reuse desktop experience in mobile to boost stability and testability.",
       "tech": "AvaloniaUI, WPF, C#, .NET, Desktop"
     }
   },
@@ -74,32 +79,32 @@
     "title": "Work Experience",
     "timeline": [
       {
-        "period": "2023 - Present",
-        "title": "Flutter Developer & Startup Founder",
+        "period": "2025 – Present",
+        "title": "Flutter Developer & Founder",
         "company": "Ovdix",
-        "description": "Leading mobile development with Flutter while founding and growing Ovdix startup."
+        "description": "Lead mobile development in Flutter while founding and growing the Ovdix startup."
       },
       {
-        "period": "2022",
+        "period": "2022 – 2024",
         "title": "Mobile Developer",
-        "company": "Xamarin Native",
-        "description": "Specialized in cross-platform mobile development using Xamarin Native for iOS and Android."
+        "company": "Flutter",
+        "description": "Specialized in cross-platform mobile development using Flutter."
       },
       {
-        "period": "2018 - 2022",
+        "period": "2018 – 2022",
         "title": "Desktop Developer",
-        "company": "WPF Development",
-        "description": "Started IT career developing desktop applications using WPF and .NET technologies."
+        "company": "WPF & AvaloniaUI Development",
+        "description": "Started my IT career building desktop apps with WPF and .NET technologies."
       }
     ]
   },
   "videos": {
     "title": "Development Videos",
-    "description": "Check out my YouTube channel where I share insights about mobile and desktop development."
+    "description": "Check out my YouTube channel where I share insights on mobile and desktop development."
   },
   "contact": {
-    "title": "Get In Touch",
-    "description": "Let's connect and discuss opportunities to work together.",
+    "title": "Contact Me",
+    "description": "Let’s connect and discuss collaboration opportunities.",
     "email": "Email",
     "github": "GitHub",
     "linkedin": "LinkedIn"
@@ -108,12 +113,12 @@
     "title": "Resume",
     "downloadPdf": "Download PDF",
     "header": {
-      "title": "Flutter Developer",
+      "title": "Senior Flutter Developer",
       "location": "Remote"
     },
     "summary": {
       "title": "Professional Summary",
-      "content": "Experienced Flutter engineer who quickly adapts to any codebase and focuses on business results. I build productive relationships with designers, analysts, and managers, helping to focus on tasks that bring the most value. I practice 'small iterations': breaking features into tasks that can be completed in a day and immediately integrated into the build. I conduct thorough code reviews and provide detailed recommendations that improve code quality and team processes. My approach accelerates releases and reduces risks, allowing products to grow quickly and deliver value to the business."
+      "content": "Senior Flutter engineer with a product mindset. I ramp up into codebases fast, establish Clean Architecture, and set up CI/CD and metrics. I ship features in short iterations (tasks ≤ 1 day) and consistently deliver to release. I reduce risk through decomposition, code reviews, and alignment with design/analytics/PM. Strengths: performance (no jank), stability (crash-free), UX polish, and transparent value delivery."
     },
     "skills": {
       "title": "Technical Skills",
@@ -128,92 +133,81 @@
           "title": "Founder & Lead Developer",
           "company": "Ovdix",
           "location": "Remote",
-          "period": "January 2025 - Present",
+          "period": "January 2025 – Present",
           "projects": [
             {
-              "name": "Ovdix Platform Development",
+              "name": "Ovdix Platform (iOS/Android)",
               "responsibilities": [
-                "Working with Supabase / Firebase for backend infrastructure",
-                "Implementing In-App Purchases (backend + mobile)",
-                "Publishing to App Store and Google Play",
-                "Building custom chats with automatic translation via OpenAI (Supabase + flutter_chat_ui)",
-                "Integrating advertising, Google ID / Apple ID login, Google Maps Services, and AppsFlyer",
-                "Implementing Deep Links and sharing functionality",
-                "Related tasks: collaborating with designers, setting icon tasks, preparing publication materials, searching for testing team"
+                "Designed the app architecture from scratch (Clean Architecture, DI, modularity) → fast releases with no performance regressions.",
+                "Implemented auto-translation for listings and chats (GPT-4o-mini) → frictionless multilingual communication without copy-paste.",
+                "Set up IAP (client + backend), push notifications, deep links, and sharing → increased engagement and retention.",
+                "Established CI/CD (GitHub Actions), signing, profiles, and delivery → predictable release cadence.",
+                "Hooked up AppsFlyer/Analytics/Crashlytics and alerts → transparent stability & conversion metrics; fast incident response."
               ]
             }
           ]
         },
         {
-          "title": "Middle/Senior Mobile Developer",
+          "title": "Middle/Senior Flutter Developer",
           "company": "DD Planet",
           "location": "Saint Petersburg (remote)",
-          "period": "January 2022 - Present",
+          "period": "January 2022 – Present",
           "projects": [
             {
-              "name": "Atom - Electric Vehicle Steering Wheel Prototype Development (Outstaffing)",
+              "name": "ATOM — prototype app for an EV steering wheel (outstaff)",
               "responsibilities": [
-                "Implemented route finding logic to charging stations and other city locations, route building with gradient traffic display via Yandex MapKit, NavKit",
-                "Implemented complex animations in the project",
-                "Quickly got up to speed at the beginning of the project, managing to deliver new screens before the demo without any onboarding from colleagues (due to their absence)",
-                "Implemented quick action drawer display with custom swipe zones and more"
+                "Implemented search to chargers/POI and routing (Yandex MapKit/NavKit) with a traffic gradient overlay → clear road load visualization.",
+                "Built complex animations and a custom quick-actions sheet with swipe zones → instant access to key functions without lag.",
+                "Joined with zero onboarding and delivered screens for the demo on time → de-risked a key presentation."
               ]
             },
             {
-              "name": "KDL — Medical Laboratory (Flutter)",
+              "name": "KDL — medical laboratory",
               "responsibilities": [
-                "Implemented initial architecture and authorization logic",
-                "Biometric login — PIN code and fingerprint authentication",
-                "Receiving and displaying PDF test results"
+                "Designed the initial architecture and biometrics-based auth (PIN/Touch ID) → secure and fast re-entry.",
+                "Implemented fetching and viewing PDF test results → preserved formatting and correct rendering across devices."
               ]
             },
             {
-              "name": "Oil Industry Engineers Application",
+              "name": "App for oil-industry engineers",
               "responsibilities": [
-                "Complete refactoring of legacy code to Clean Architecture",
-                "Geolocation collection and coordinate binding to photo report metadata",
-                "Camera module without ability to select images from gallery or fake camera"
+                "Refactored legacy to Clean Architecture → reduced coupling, improved testability, and sped up development.",
+                "Implemented geolocation with coordinate binding to photo-report metadata → fewer manual reporting errors.",
+                "Built a hardened camera module without gallery access → met strict domain security requirements."
               ]
             },
             {
-              "name": "MusorOFF (Flutter)",
+              "name": "MusorOFF",
               "responsibilities": [
-                "Integrated Yandex Maps into the client app",
-                "Implemented lazy screen update mechanism",
-                "Added logic for attaching photos to orders",
-                "Refactored and extracted shared logic into reusable modules for both courier and client apps",
-                "Implemented push notification handling"
+                "Integrated Yandex Maps and lazy screen updates → smooth UX on flaky networks.",
+                "Extracted shared modules for courier and client apps → less duplication and faster feature delivery.",
+                "Implemented push notification handling → increased app return rate."
               ]
             },
             {
-              "name": "Vmeste.ru (Xamarin.Android / .NET for Android)",
+              "name": "Vmeste.ru",
               "responsibilities": [
-                "Complete redesign with custom control development",
-                "Reactions on posts: implemented reaction storage, updating, and sync",
-                "Introduced naming standards across all business processes",
-                "Added stories functionality",
-                "Implemented welcome stickers in house chats on first message",
-                "Regular collaboration with designers and PMs to find optimal implementation solutions",
-                "Migrated project to latest .NET and MvvmCross versions",
-                "Developed wrapper for native Android library to create sticker carousel"
+                "Complete redesign with custom controls → visual consistency and modern UI.",
+                "Added reactions, stories, and welcome stickers in house chats → higher engagement and interaction signals.",
+                "Standardized naming and migrated to current .NET/MvvmCross → easier maintenance and onboarding.",
+                "Wrote a wrapper over a native Android sticker-carousel library → flexibility and reuse."
               ]
             }
           ]
         },
         {
           "title": "Middle Desktop Developer",
-          "company": "Kompleksnye Sistemy LLC",
+          "company": "LLC “Complex Systems”",
           "location": "Saint Petersburg",
-          "period": "March 2018 - December 2021",
+          "period": "March 2018 – December 2021",
           "projects": [
             {
-              "name": "AKIM – Simulation modeling suite for physical security systems",
+              "name": "AKIM — simulation package for physical security systems",
               "responsibilities": [
-                "Designed and implemented plugin-based application architecture",
-                "Created a vector-based rendering engine for facility layout planning",
-                "Developed a heuristic pathfinding algorithm for agent simulation",
-                "Built a low-level C# wrapper around a simulation engine written in Delphi (AnyDynamic)",
-                "Added 3D visualization support for plans using Helix3DToolkit"
+                "Designed a plugin architecture → rapid addition of new modules without rewriting the core.",
+                "Built a vector rendering engine for facility layout planning → crisp graphics and artifact-free scaling.",
+                "Developed a heuristic path-finding algorithm for agents → realistic simulation without exponential time blow-ups.",
+                "Created a low-level C# wrapper around a Delphi simulation engine (AnyDynamic) and 3D visualization with Helix3DToolkit → unified .NET stack for the team."
               ]
             }
           ]
@@ -224,12 +218,12 @@
       "title": "Education",
       "items": [
         {
-          "degree": "Master's Degree",
+          "degree": "Master’s",
           "university": "ITMO University",
           "location": "Saint Petersburg",
-          "period": "2016 - 2018",
+          "period": "2016 – 2018",
           "faculty": "Faculty of Laser and Light Engineering",
-          "specialization": "Quality control of rocket and space system components",
+          "specialization": "Quality control of rocket and space systems components",
           "honors": "Graduated with honors (red diploma)"
         }
       ]
@@ -238,14 +232,19 @@
       "title": "Published Articles",
       "items": [
         {
+          "year": "2025",
+          "title": "Simple localization of .NET apps with Slang.Net",
+          "link": "https://habr.com/ru/articles/874066/"
+        },
+        {
           "year": "2024",
           "title": "First look at migrating from Xamarin Native to Flutter",
           "link": "https://habr.com/ru/articles/796147/"
         },
         {
-          "year": "2025",
-          "title": "Simple localization of .NET applications using Slang.Net",
-          "link": "https://habr.com/ru/articles/874066/"
+          "year": "2019",
+          "title": "Applicability of a heuristic algorithm for trajectory search in physical protection systems",
+          "link": "https://seim-conf.org/archive/2019/"
         }
       ]
     },
@@ -253,26 +252,32 @@
       "title": "Key Projects",
       "items": [
         {
+          "name": "VertoChat",
+          "description": "End-to-end messenger with context-aware AI translation of text and voice. Strengths: low audio latency, smooth animations, and memory efficiency.",
+          "technologies": "Flutter, Platform Channels, Audio/Video, OpenAI, Firebase, Push, IAP, CI/CD",
+          "link": "https://verto.chat"
+        },
+        {
           "name": "Ovdix",
-          "description": "A multilingual classifieds platform that enables users to buy, sell, and exchange goods and services across Eastern Europe. With instant translation powered by GPT-4o-mini, listings and chat messages are automatically translated into your preferred language.",
-          "technologies": "Flutter, Mobile Development, Cross-platform, AI Translation",
+          "description": "Multilingual marketplace with auto-translation of listings and chats. Transparent metrics (Crashlytics/Analytics), fast releases, thoughtful navigation.",
+          "technologies": "Flutter, Supabase, Firebase, Maps, IAP, Push, Deep Links, AppsFlyer, CI/CD",
           "link": "https://ovdix.com"
         },
         {
           "name": "Slang.NET",
-          "description": "A new approach to localization in .NET, offering many convenient features compared to traditional methods.",
+          "description": "Modern localization for .NET with developer-friendly workflows. Impact: less boilerplate, cleaner code, faster onboarding.",
           "technologies": "C#, .NET, Localization",
           "link": "https://github.com/egorozh/Slang.NET"
         },
         {
           "name": "Tabalonia",
-          "description": "A control library for building cross-platform tabbed interfaces using Avalonia UI.",
+          "description": "Cross-platform tabbed UI library for Avalonia UI. Outcome: unified UI patterns and reusable components.",
           "technologies": "C#, Avalonia UI, Desktop",
           "link": "https://github.com/egorozh/Tabalonia"
         },
         {
           "name": "XFiler",
-          "description": "A modern file manager for macOS and Windows with integrated Yandex Disk support.",
+          "description": "File manager for macOS/Windows with integrated Yandex.Disk support. Strengths — large-file UX and stability.",
           "technologies": "C#, .NET, Desktop, Cloud Storage",
           "link": "https://x-filer.com/"
         }
