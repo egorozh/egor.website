@@ -16,7 +16,7 @@
     }
   },
   "hero": {
-    "greeting": "Hi, I’m",
+    "greeting": "Hi, I'm",
     "name": "Egor Zheludkov",
     "title": "Senior Flutter Developer",
     "description": "Senior Flutter engineer with end-to-end experience — from idea and architecture to release and analytics. Creator of Ovdix and VertoChat; I ramp up quickly into any codebase, speed up releases, and improve stability.",
@@ -24,7 +24,7 @@
   },
   "about": {
     "title": "About",
-    "description": "I’m a Senior Flutter developer with a strong product focus. Building commercial apps since 2018 (desktop → mobile since 2022). I take products from 0 to release: architecture (Clean Architecture), state (BLoC), navigation (auto_route), integrations (Firebase/Maps/IAP/Push), CI/CD (GitHub Actions), analytics (Crashlytics/Analytics/AppsFlyer). Founder of the side projects Ovdix and VertoChat.",
+    "description": "I'm a Senior Flutter developer with a strong product focus. Building commercial apps since 2018 (desktop → mobile since 2022). I take products from 0 to release: architecture (Clean Architecture), state (BLoC), navigation (auto_route), integrations (Firebase/Maps/IAP/Push), CI/CD (GitHub Actions), analytics (Crashlytics/Analytics/AppsFlyer). Founder of the side projects Ovdix and VertoChat.",
     "highlight": "Ship business value in short iterations",
     "cards": [
       {
@@ -104,7 +104,7 @@
   },
   "contact": {
     "title": "Contact Me",
-    "description": "Let’s connect and discuss collaboration opportunities.",
+    "description": "Let's connect and discuss collaboration opportunities.",
     "email": "Email",
     "github": "GitHub",
     "linkedin": "LinkedIn"
@@ -176,24 +176,6 @@
       "title": "Professional Experience",
       "items": [
         {
-          "title": "Founder & Lead Developer",
-          "company": "Ovdix",
-          "location": "Remote",
-          "period": "January 2025 – Present",
-          "projects": [
-            {
-              "name": "Ovdix Platform (iOS/Android)",
-              "responsibilities": [
-                "Designed the app architecture from scratch (Clean Architecture, DI, modularity) → fast releases with no performance regressions.",
-                "Implemented auto-translation for listings and chats (GPT-4o-mini) → frictionless multilingual communication without copy-paste.",
-                "Set up IAP (client + backend), push notifications, deep links, and sharing → increased engagement and retention.",
-                "Established CI/CD (GitHub Actions), signing, profiles, and delivery → predictable release cadence.",
-                "Hooked up AppsFlyer/Analytics/Crashlytics and alerts → transparent stability & conversion metrics; fast incident response."
-              ]
-            }
-          ]
-        },
-        {
           "title": "Middle/Senior Flutter Developer",
           "company": "DD Planet",
           "location": "Saint Petersburg (remote)",
@@ -242,8 +224,26 @@
           ]
         },
         {
+          "title": "Founder",
+          "company": "Ovdix (pet project)",
+          "location": "Remote",
+          "period": "January 2025 – July 2025",
+          "projects": [
+            {
+              "name": "Ovdix pet project (iOS/Android/Web)",
+              "responsibilities": [
+                "Designed the app architecture from scratch (Clean Architecture, DI, modularity)",
+                "Implemented auto-translation for listings and chats (GPT-4o-mini)",
+                "Set up IAP (client + backend), push notifications, deep links",
+                "Integrated AppsFlyer/Analytics/Crashlytics",
+                "Published the app to App Store and Google Play"
+              ]
+            }
+          ]
+        },
+        {
           "title": "Middle Desktop Developer",
-          "company": "LLC “Complex Systems”",
+          "company": "LLC "Complex Systems"",
           "location": "Saint Petersburg",
           "period": "March 2018 – December 2021",
           "projects": [
@@ -264,7 +264,7 @@
       "title": "Education",
       "items": [
         {
-          "degree": "Master’s",
+          "degree": "Master's",
           "university": "ITMO University",
           "location": "Saint Petersburg",
           "period": "2016 – 2018",

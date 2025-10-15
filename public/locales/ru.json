@@ -242,6 +242,24 @@
           ]
         },
         {
+          "title": "Основатель",
+          "company": "Ovdix (пет-проект)",
+          "location": "Удаленно",
+          "period": "Январь 2025 – Июль 2025",
+          "projects": [
+            {
+              "name": "Пет-проект Ovdix (iOS/Android/Web)",
+              "responsibilities": [
+                "С нуля спроектировал архитектуру приложения (Clean Architecture, DI, модульность)",
+                "Реализовал автоперевод объявлений и чатов (GPT-4o-mini)",
+                "Настроил IAP (клиент+бэк), пуш-уведомления, deep links",
+                "Подключил AppsFlyer/Analytics/Crashlytics",
+                "Опубликовал приложение в App Store и Google Play"
+              ]
+            }
+          ]
+        },
+        {
           "title": "Middle Десктопный Разработчик",
           "company": "ООО \"Комплексные Системы\"",
           "location": "Санкт-Петербург",
