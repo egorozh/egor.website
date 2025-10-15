@@ -122,9 +122,55 @@
     },
     "skills": {
       "title": "Технические навыки",
-      "mobile": "Мобильная разработка",
-      "languages": "Языки программирования",
-      "tools": "Инструменты и технологии"
+      "architecture": "Архитектура и Дизайн",
+      "development": "Разработка и Состояние",
+      "integrations": "Интеграции и Сервисы",
+      "testing": "Тестирование",
+      "tools": "Инструменты и DevOps",
+      "categories": {
+        "architecture": [
+          "Чистая архитектура (Clean Architecture)",
+          "Управление состоянием: BLoC",
+          "Навигация: auto_route",
+          "Dependency Injection: GetIt, Injectable",
+          "Кодогенерация: freezed, build_runner"
+        ],
+        "development": [
+          "Работа с сетью: dio + retrofit, REST",
+          "Работа с пагинацией: infinite_scroll_pagination",
+          "Локализация через slang. Перевод через slang gpt",
+          "SQLite: Drift",
+          "Platform Channels: Swift/Kotlin",
+          "Isolates & Performance Profiling: Flutter DevTools",
+          "Realtime & WebSockets (чат)",
+          "Работа с Deep Links",
+          "Talker"
+        ],
+        "integrations": [
+          "Firebase: Auth, Firestore, Push Notifications, Crashlytics, Remote Config, Storage",
+          "Supabase: Auth/DB/Storage",
+          "Яндекс карты",
+          "Google Maps",
+          "In-App Purchases: StoreKit/BillingClient",
+          "Аналитика: Firebase Analytics, AppsFlyer"
+        ],
+        "testing": [
+          "Интеграционное тестирование: Gherkin",
+          "Написание Unit, Widget тестов"
+        ],
+        "tools": [
+          "Android Studio, Xcode, JetBrains Rider",
+          "Git & GitFlow",
+          "CI/CD: GitHub Actions / Azure DevOps",
+          "Fastlane",
+          "App Store Connect / Google Play Console",
+          "Firebase Console",
+          "Azure + ASP.NET Core (бэк-интеграции)",
+          "Azure Key Vault (secrets)",
+          "Postman",
+          "Figma: выгрузка ресурсов, редактирование в драфте под нужды разработки"
+        ]
+      }
     },
     "experience": {
       "title": "Профессиональный опыт",

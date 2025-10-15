@@ -122,9 +122,55 @@
     },
     "skills": {
       "title": "Technical Skills",
-      "mobile": "Mobile Development",
-      "languages": "Programming Languages",
-      "tools": "Tools & Technologies"
+      "architecture": "Architecture & Design",
+      "development": "Development & State",
+      "integrations": "Integrations & Services",
+      "testing": "Testing",
+      "tools": "Tools & DevOps",
+      "categories": {
+        "architecture": [
+          "Clean Architecture",
+          "State management: BLoC",
+          "Navigation: auto_route",
+          "Dependency Injection: GetIt, Injectable",
+          "Code generation: freezed, build_runner"
+        ],
+        "development": [
+          "Networking: dio + retrofit, REST",
+          "Pagination: infinite_scroll_pagination",
+          "Localization: slang, slang gpt for translation",
+          "SQLite: Drift",
+          "Platform Channels: Swift/Kotlin",
+          "Isolates & Performance Profiling: Flutter DevTools",
+          "Realtime & WebSockets (chat)",
+          "Deep Links",
+          "Talker"
+        ],
+        "integrations": [
+          "Firebase: Auth, Firestore, Push Notifications, Crashlytics, Remote Config, Storage",
+          "Supabase: Auth/DB/Storage",
+          "Yandex Maps",
+          "Google Maps",
+          "In-App Purchases: StoreKit/BillingClient",
+          "Analytics: Firebase Analytics, AppsFlyer"
+        ],
+        "testing": [
+          "Integration testing: Gherkin",
+          "Unit, Widget tests"
+        ],
+        "tools": [
+          "Android Studio, Xcode, JetBrains Rider",
+          "Git & GitFlow",
+          "CI/CD: GitHub Actions / Azure DevOps",
+          "Fastlane",
+          "App Store Connect / Google Play Console",
+          "Firebase Console",
+          "Azure + ASP.NET Core (backend integrations)",
+          "Azure Key Vault (secrets)",
+          "Postman",
+          "Figma: resource export, draft editing for dev needs"
+        ]
+      }
     },
     "experience": {
       "title": "Professional Experience",
