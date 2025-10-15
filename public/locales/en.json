@@ -118,7 +118,7 @@
     },
     "summary": {
       "title": "Professional Summary",
-      "content": "Senior Flutter engineer with a product mindset. I ramp up into codebases fast, establish Clean Architecture, and set up CI/CD and metrics. I ship features in short iterations (tasks ≤ 1 day) and consistently deliver to release. I reduce risk through decomposition, code reviews, and alignment with design/analytics/PM. Strengths: performance (no jank), stability (crash-free), UX polish, and transparent value delivery."
+      "content": "Senior Flutter engineer with a product mindset. I ramp up into codebases fast and establish Clean Architecture. I ship features in short iterations and consistently deliver to release. I reduce risk through decomposition, code reviews, and alignment with design/analytics/PM. Strengths: performance, stability."
     },
     "skills": {
       "title": "Technical Skills",
@@ -180,45 +180,47 @@
           "company": "DD Planet",
           "location": "Saint Petersburg (remote)",
           "period": "January 2022 – Present",
+          "description": "Tech stack: Clean Architecture, State management: BLoC, Networking: dio + retrofit, REST, Navigation: auto_route, Talker, Firebase (auth, firestore, push notifications, crashlytics), Yandex Maps, Google Maps, App Store Connect, Google Play Console, AppsFlyer, Localization via slang (translation via slang gpt), Figma (resource export, draft editing for dev needs), Supabase, Integration testing: gherkin, Unit and Widget tests, Deep Links, Pagination: infinite_scroll_pagination, SQLite: Drift",
           "projects": [
             {
               "name": "ATOM — prototype app for an EV steering wheel (outstaff)",
               "responsibilities": [
-                "Implemented search to chargers/POI and routing (Yandex MapKit/NavKit) with a traffic gradient overlay → clear road load visualization.",
-                "Built complex animations and a custom quick-actions sheet with swipe zones → instant access to key functions without lag.",
-                "Joined with zero onboarding and delivered screens for the demo on time → de-risked a key presentation."
+                "Implemented search to chargers/POI and routing (Yandex MapKit/NavKit) with traffic gradient overlay",
+                "Built complex animations and a custom quick-actions sheet with swipe zones",
+                "Joined with zero onboarding and delivered screens for the demo on time",
+                "Simplified smart mirror app architecture. Set up build processes for Linux."
               ]
             },
             {
               "name": "KDL — medical laboratory",
               "responsibilities": [
-                "Designed the initial architecture and biometrics-based auth (PIN/Touch ID) → secure and fast re-entry.",
-                "Implemented fetching and viewing PDF test results → preserved formatting and correct rendering across devices."
+                "Designed the initial architecture and biometrics-based auth (PIN/Touch ID)",
+                "Implemented fetching and viewing PDF test results"
               ]
             },
             {
               "name": "App for oil-industry engineers",
               "responsibilities": [
-                "Refactored legacy to Clean Architecture → reduced coupling, improved testability, and sped up development.",
-                "Implemented geolocation with coordinate binding to photo-report metadata → fewer manual reporting errors.",
-                "Built a hardened camera module without gallery access → met strict domain security requirements."
+                "Refactored legacy to Clean Architecture",
+                "Implemented geolocation with coordinate binding to photo-report metadata",
+                "Built a hardened camera module without gallery access"
               ]
             },
             {
               "name": "MusorOFF",
               "responsibilities": [
-                "Integrated Yandex Maps and lazy screen updates → smooth UX on flaky networks.",
-                "Extracted shared modules for courier and client apps → less duplication and faster feature delivery.",
-                "Implemented push notification handling → increased app return rate."
+                "Integrated Yandex Maps and lazy screen updates",
+                "Extracted shared modules for courier and client apps",
+                "Implemented push notification handling"
               ]
             },
             {
               "name": "Vmeste.ru",
               "responsibilities": [
-                "Complete redesign with custom controls → visual consistency and modern UI.",
-                "Added reactions, stories, and welcome stickers in house chats → higher engagement and interaction signals.",
-                "Standardized naming and migrated to current .NET/MvvmCross → easier maintenance and onboarding.",
-                "Wrote a wrapper over a native Android sticker-carousel library → flexibility and reuse."
+                "Complete redesign with custom controls",
+                "Added reactions, stories, and welcome stickers in house chats",
+                "Standardized naming and migrated to current .NET/MvvmCross",
+                "Wrote a wrapper over a native Android sticker-carousel library"
               ]
             }
           ]
@@ -242,18 +244,20 @@
           ]
         },
         {
-          "title": "Middle Desktop Developer",
+          "title": "Desktop C# Developer",
           "company": "Complex Systems",
           "location": "Saint Petersburg",
           "period": "March 2018 – December 2021",
+          "description": "Desktop C# Developer (WPF, AvaloniaUI)",
           "projects": [
             {
               "name": "AKIM — simulation package for physical security systems",
               "responsibilities": [
-                "Designed a plugin architecture → rapid addition of new modules without rewriting the core.",
-                "Built a vector rendering engine for facility layout planning → crisp graphics and artifact-free scaling.",
-                "Developed a heuristic path-finding algorithm for agents → realistic simulation without exponential time blow-ups.",
-                "Created a low-level C# wrapper around a Delphi simulation engine (AnyDynamic) and 3D visualization with Helix3DToolkit → unified .NET stack for the team."
+                "Designed a plugin architecture",
+                "Built a vector rendering engine for facility layout planning",
+                "Developed a heuristic path-finding algorithm for agents",
+                "Created a low-level C# wrapper around a Delphi library (AnyDynamic)",
+                "Built a 3D visualization engine (Helix3DToolkit)"
               ]
             }
           ]
