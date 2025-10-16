@@ -16,7 +16,7 @@ const ResumeSkills = () => {
             <h3 className="text-xl font-bold text-gray-900 mb-4 border-b-2 border-blue-600 pb-1 print:text-lg print:border-gray-300">
                 {t('resume.skills.title')}
             </h3>
-            <div className="space-y-5 print:space-y-4">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-5 print:gap-x-6 print:gap-y-4">
                 {Object.entries(skillsData).map(([category, skills]) => (
                     <div key={category}>
                         <h4 className="font-semibold text-gray-800 mb-2 print:text-sm print:mb-1.5">
