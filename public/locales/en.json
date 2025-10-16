@@ -147,11 +147,11 @@
           "Talker"
         ],
         "integrations": [
-          "Firebase: Auth, Firestore, Push Notifications, Crashlytics, Remote Config, Storage",
+          "Firebase: Auth, Firestore, Push Notifications, Crashlytics, Storage",
           "Supabase: Auth/DB/Storage",
           "Yandex Maps",
           "Google Maps",
-          "In-App Purchases: StoreKit/BillingClient",
+          "In-App Purchases",
           "Analytics: Firebase Analytics, AppsFlyer"
         ],
         "testing": [
@@ -162,7 +162,6 @@
           "Android Studio, Xcode, JetBrains Rider",
           "Git & GitFlow",
           "CI/CD: GitHub Actions / Azure DevOps",
-          "Fastlane",
           "App Store Connect / Google Play Console",
           "Firebase Console",
           "Azure + ASP.NET Core (backend integrations)",
