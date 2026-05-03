@@ -4,6 +4,7 @@ import {useLocation, Link, useNavigate} from 'react-router-dom';
 import {Button} from '@/components/ui/button';
 import {Menu, X} from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
     const {t} = useTranslation();
@@ -60,7 +61,9 @@ const Header = () => {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-                isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+                isScrolled
+                    ? 'bg-background/80 backdrop-blur-xl shadow-card border-b border-border/50'
+                    : 'bg-transparent'
             }`}
         >
             <div className="container mx-auto px-4 py-4">
@@ -71,7 +74,7 @@ const Header = () => {
                             alt="Egor Zheludkov Logo"
                             className="h-10 w-10 rounded-full object-cover"
                         />
-                        <span className="text-xl font-bold text-gray-900">{t('header.name')}</span>
+                        <span className="text-xl font-bold text-foreground">{t('header.name')}</span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -81,7 +84,7 @@ const Header = () => {
                                 <Link
                                     key={item.key}
                                     to={item.id}
-                                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                                    className="text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
                                 >
                                     {t(`header.nav.${item.key}`)}
                                 </Link>
@@ -89,7 +92,7 @@ const Header = () => {
                                 <button
                                     key={item.key}
                                     onClick={() => scrollToSection(item.id)}
-                                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                                    className="text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
                                 >
                                     {t(`header.nav.${item.key}`)}
                                 </button>
@@ -98,6 +101,7 @@ const Header = () => {
                     </nav>
 
                     <div className="flex items-center gap-4">
+                        <ThemeToggle />
                         <LanguageSwitcher/>
 
                         {/* Mobile Menu Button */}
@@ -115,14 +119,14 @@ const Header = () => {
                 {/* Mobile Navigation */}
                 {isMobileMenuOpen && (
                     <nav
-                        className="md:hidden mt-4 pb-4 border-t pt-4 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg -mx-4 px-4">
+                        className="md:hidden mt-4 pb-4 border-t border-border pt-4 bg-background/95 backdrop-blur-xl shadow-card rounded-lg -mx-4 px-4">
                         <div className="flex flex-col gap-4">
                             {navItems.map((item) => (
                                 item.isExternal ? (
                                     <Link
                                         key={item.key}
                                         to={item.id}
-                                        className="text-left text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2"
+                                        className="text-left text-foreground/80 hover:text-primary transition-colors duration-200 font-medium py-2"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         {t(`header.nav.${item.key}`)}
@@ -131,7 +135,7 @@ const Header = () => {
                                     <button
                                         key={item.key}
                                         onClick={() => scrollToSection(item.id)}
-                                        className="text-left text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2"
+                                        className="text-left text-foreground/80 hover:text-primary transition-colors duration-200 font-medium py-2"
                                     >
                                         {t(`header.nav.${item.key}`)}
                                     </button>
