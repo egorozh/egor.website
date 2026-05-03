@@ -29,6 +29,14 @@ const Projects = () => {
       tech: t('projects.xamarin.tech'),
     },
     {
+      title: t('projects.plumix.title'),
+      description: t('projects.plumix.description'),
+      tech: t('projects.plumix.tech'),
+      link: 'https://plumix.net',
+      linkText: t('projects.plumix.link'),
+      featured: true,
+    },
+    {
       title: t('projects.wpf.title'),
       description: t('projects.wpf.description'),
       tech: t('projects.wpf.tech'),

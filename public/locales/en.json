@@ -19,25 +19,25 @@
     "greeting": "Hi, I'm",
     "name": "Egor Zheludkov",
     "title": "Senior Flutter Developer",
-    "description": "Senior Flutter engineer with end-to-end experience — from idea and architecture to release and analytics. Creator of Ovdix and VertoChat; I ramp up quickly into any codebase, speed up releases, and improve stability.",
+    "description": "Senior Flutter developer who takes projects from idea to App Store. Built Ovdix and VertoChat from scratch. I ramp up quickly in any codebase, speed up release cycles, and keep crash rates low.",
     "cta": "Get in touch"
   },
   "about": {
     "title": "About",
-    "description": "I'm a Senior Flutter developer with a strong product focus. Building commercial apps since 2018 (desktop → mobile since 2022). I take products from 0 to release: architecture (Clean Architecture), state (BLoC), navigation (auto_route), integrations (Firebase/Maps/IAP/Push), CI/CD (GitHub Actions), analytics (Crashlytics/Analytics/AppsFlyer). Founder of the side projects Ovdix and VertoChat.",
-    "highlight": "Ship business value in short iterations",
+    "description": "I'm a Senior Flutter developer with a strong product focus. Building commercial apps since 2018 (desktop → mobile since 2022). I take products from zero to release: architecture (Clean Architecture), state (BLoC), navigation (auto_route), integrations (Firebase/Maps/IAP/Push), CI/CD (GitHub Actions), analytics (Crashlytics/Analytics/AppsFlyer). Founder of Ovdix and VertoChat.",
+    "highlight": "Short iterations, stable releases",
     "cards": [
       {
         "title": "Flutter",
         "description": "Performance, stability, readable architecture"
       },
       {
-        "title": "0→1 & growth",
-        "description": "Store releases, metrics, feedback, and fast loops"
+        "title": "Product launch",
+        "description": "App to stores, analytics, fast release cycles"
       },
       {
-        "title": "Tech-lead mindset",
-        "description": "Code reviews, mentoring, smart task breakdown"
+        "title": "Tech lead",
+        "description": "Code reviews, mentoring, task breakdown"
       }
     ]
   },
@@ -54,13 +54,13 @@
     "title": "Featured Projects",
     "ovdix": {
       "title": "Ovdix",
-      "description": "Launched a classifieds marketplace from scratch with auto-translation. Built the architecture, developed the mobile app, set up IAP, push, deep links, analytics, and store releases → regular updates with no downtime and no crash-free degradation.",
+      "description": "Built a classifieds marketplace from scratch with auto-translation. Designed the architecture, developed the mobile app, set up IAP, push notifications, deep links, analytics, and store releases. Regular updates with no downtime.",
       "tech": "Flutter, Dart, Clean Architecture, BLoC, Supabase, Firebase (Auth/Crashlytics/Analytics), In-App Purchases, Push, Deep Links, Maps, AppsFlyer, CI/CD",
       "link": "Visit Ovdix"
     },
     "vertochat": {
       "title": "VertoChat",
-      "description": "Messenger with local/p2p/group chats and neural text/voice translation. Designed the protocol, implemented platform channels for audio, and optimized streaming → smooth animations, low latency, and stability on budget devices.",
+      "description": "Messenger with local/p2p/group chats and AI translation of text and voice. Designed the protocol, implemented platform channels for audio, and optimized streaming — smooth animations, low latency, and stability on low-end devices.",
       "tech": "Flutter, Platform Channels, Audio, OpenAI translation, Firebase, Push, In-App Purchases, CI/CD",
       "link": "Visit VertoChat"
     },
@@ -69,9 +69,15 @@
       "description": "Cross-platform apps focused on UX and performance: optimized render trees, no jank, predictable routing, and caching.",
       "tech": "Flutter, Dart, Mobile"
     },
+    "plumix": {
+      "title": "Plumix",
+      "description": "Flutter-inspired UI framework for .NET — declarative, widget-based interfaces in C# using Flutter's Widget/Element/RenderObject architecture. Avalonia serves as the platform host.",
+      "tech": "C#, .NET, Avalonia, Flutter Architecture",
+      "link": "Visit Plumix"
+    },
     "wpf": {
       "title": "Avalonia Apps",
-      "description": "Desktop solutions with modular architecture and rich UIs. I reuse desktop experience in mobile to boost stability and testability.",
+      "description": "Desktop solutions with modular architecture and rich UIs. I carry desktop experience into mobile to boost stability and testability.",
       "tech": "AvaloniaUI, WPF, C#, .NET, Desktop"
     }
   },
@@ -85,16 +91,16 @@
         "description": "Lead mobile development in Flutter while founding and growing the Ovdix startup."
       },
       {
-        "period": "2022 – 2024",
+        "period": "2022 – 2025",
         "title": "Mobile Developer",
-        "company": "Flutter",
+        "company": "DD Planet",
         "description": "Specialized in cross-platform mobile development using Flutter."
       },
       {
         "period": "2018 – 2022",
         "title": "Desktop Developer",
-        "company": "WPF & AvaloniaUI Development",
-        "description": "Started my IT career building desktop apps with WPF and .NET technologies."
+        "company": "Complex Systems",
+        "description": "Started my IT career building desktop apps with WPF and .NET."
       }
     ]
   },
@@ -118,7 +124,7 @@
     },
     "summary": {
       "title": "Professional Summary",
-      "content": "Senior Flutter engineer with a product mindset. I ramp up into codebases fast and establish Clean Architecture. I ship features in short iterations and consistently deliver to release. I reduce risk through decomposition, code reviews, and alignment with design/analytics/PM. Strengths: performance, stability."
+      "content": "Senior Flutter developer with a product focus. I ramp up fast in any codebase and establish Clean Architecture. I work in short iterations and reliably bring features to release. I keep things on track through decomposition, code reviews, and close collaboration with design, analytics, and PM."
     },
     "skills": {
       "title": "Technical Skills",
@@ -178,7 +184,7 @@
           "title": "Middle/Senior Flutter Developer",
           "company": "DD Planet",
           "location": "Saint Petersburg (remote)",
-          "period": "January 2022 – Present",
+          "period": "January 2022 – November 2025",
           "description": "Tech stack: Clean Architecture, State management: BLoC, Networking: dio + retrofit, REST, Navigation: auto_route, Talker, Firebase (auth, firestore, push notifications, crashlytics), Yandex Maps, Google Maps, App Store Connect, Google Play Console, AppsFlyer, Localization via slang (translation via slang gpt), Figma (resource export, draft editing for dev needs), Supabase, Integration testing: gherkin, Unit and Widget tests, Deep Links, Pagination: infinite_scroll_pagination, SQLite: Drift",
           "projects": [
             {
@@ -226,12 +232,12 @@
         },
         {
           "title": "Founder",
-          "company": "Ovdix (pet project)",
+          "company": "Ovdix",
           "location": "Remote",
           "period": "January 2025 – July 2025",
           "projects": [
             {
-              "name": "Ovdix pet project (iOS/Android/Web)",
+              "name": "Ovdix (iOS/Android/Web)",
               "responsibilities": [
                 "Designed the app architecture from scratch (Clean Architecture, DI, modularity)",
                 "Implemented auto-translation for listings and chats (GPT-4o-mini)",
@@ -302,7 +308,7 @@
       "items": [
         {
           "name": "VertoChat",
-          "description": "End-to-end messenger with context-aware AI translation of text and voice. Strengths: low audio latency, smooth animations, and memory efficiency.",
+          "description": "Messenger with AI-powered translation of text and voice messages. Low audio latency, smooth animations, stable on low-end devices.",
           "technologies": "Flutter, Platform Channels, Audio/Video, OpenAI, Firebase, Push, IAP, CI/CD",
           "link": "https://verto.chat"
         },
@@ -314,19 +320,25 @@
         },
         {
           "name": "Slang.NET",
-          "description": "Modern localization for .NET with developer-friendly workflows. Impact: less boilerplate, cleaner code, faster onboarding.",
+          "description": "Localization library for .NET with type-safe translations and minimal boilerplate. Cleaner code, faster setup.",
           "technologies": "C#, .NET, Localization",
           "link": "https://github.com/egorozh/Slang.NET"
         },
         {
+          "name": "Plumix",
+          "description": "Flutter-inspired UI framework for .NET. Declarative widget-based UIs in C# with Flutter's Widget/Element/RenderObject architecture running on top of Avalonia.",
+          "technologies": "C#, .NET, Avalonia",
+          "link": "https://plumix.net"
+        },
+        {
           "name": "Tabalonia",
-          "description": "Cross-platform tabbed UI library for Avalonia UI. Outcome: unified UI patterns and reusable components.",
+          "description": "Tabbed UI library for Avalonia. Unified tab interface across platforms, easy to drop into any project.",
           "technologies": "C#, Avalonia UI, Desktop",
           "link": "https://github.com/egorozh/Tabalonia"
         },
         {
           "name": "XFiler",
-          "description": "File manager for macOS/Windows with integrated Yandex.Disk support. Strengths — large-file UX and stability.",
+          "description": "File manager for macOS and Windows with Yandex.Disk integration. Handles large files well, stable under load.",
           "technologies": "C#, .NET, Desktop, Cloud Storage",
           "link": "https://x-filer.com/"
         }
