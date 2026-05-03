@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 
 import {Language, supportedLanguages} from "@/i18n";
 import {useEffect} from "react";
+import {ThemeProvider} from "@/hooks/useTheme";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const PathPreservingLanguageRedirect = () => {
 
 const App = () => (
     <QueryClientProvider client={queryClient}>
+        <ThemeProvider>
         <TooltipProvider>
             <Toaster/>
             <Sonner/>
@@ -71,6 +73,7 @@ const App = () => (
                 </Routes>
             </BrowserRouter>
         </TooltipProvider>
+        </ThemeProvider>
     </QueryClientProvider>
 );
 
