@@ -42,20 +42,20 @@ const Resume = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       {/* Shared Header - hidden in print */}
       <div className="print:hidden">
         <Header />
       </div>
 
-      <div className="min-h-screen bg-gray-50 py-8 pt-24">
+      <div className="min-h-screen bg-gradient-section py-8 pt-24 print:bg-white print:pt-8">
         <div className="max-w-4xl mx-auto px-4">
           {/* Header with Download PDF - hidden in print */}
           <div className="flex justify-between items-center mb-8 print:hidden">
-            <h1 className="text-3xl font-bold text-gray-900">{t('resume.title')}</h1>
+            <h1 className="text-3xl font-bold text-foreground">{t('resume.title')}</h1>
             <Button
               onClick={handleDownloadPDF}
-              className="bg-blue-600 hover:bg-blue-700"
+              className="bg-gradient-brand text-primary-foreground border-0 hover:shadow-glow transition-smooth"
             >
               <Download className="h-4 w-4 mr-2" />
               {t('resume.downloadPdf')}
@@ -63,7 +63,7 @@ const Resume = () => {
           </div>
 
           <div id="resume-content">
-            <Card className="bg-white shadow-lg print:shadow-none print:border-none">
+            <Card className="bg-card border border-border shadow-card-hover print:shadow-none print:border-none print:bg-white">
               <CardContent className="p-8">
                 <ResumeHeader />
                 <ResumeSummary />
