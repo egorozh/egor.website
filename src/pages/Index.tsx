@@ -47,7 +47,7 @@ const Index = () => {
   }, [location.hash]);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Header />
       <Hero />
       <About />
