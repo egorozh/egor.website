@@ -19,12 +19,12 @@
     "greeting": "Привет, я",
     "name": "Егор Желудков",
     "title": "Senior Flutter-разработчик",
-    "description": "Senior Flutter-разработчик — беру проекты от идеи до публикации в магазине. Автор Ovdix и VertoChat. Быстро разбираюсь в новой кодовой базе, ускоряю релизные циклы и держу crash-free на уровне.",
+    "description": "Senior Flutter-разработчик с AI-native подходом — беру проекты от идеи до публикации в сторы, используя Claude Code и Codex как основные рабочие инструменты. Автор Ovdix и Plumix. Быстро разбираюсь в новой кодовой базе, ускоряю релизные циклы и держу crash-free на уровне.",
     "cta": "Связаться"
   },
   "about": {
     "title": "Обо мне",
-    "description": "Я — Senior Flutter-разработчик с сильным продуктовым фокусом. С 2018 года делаю коммерческие приложения (desktop → mobile с 2022). Веду проекты от нуля до релиза: архитектура (Clean Architecture), состояние (BLoC), навигация (auto_route), интеграции (Firebase/Maps/IAP/Push), CI/CD (GitHub Actions), аналитика (Crashlytics/Analytics/AppsFlyer). Основатель Ovdix и VertoChat.",
+    "description": "Я — Senior Flutter-разработчик с сильным продуктовым фокусом. С 2018 года делаю коммерческие приложения (desktop → mobile с 2022). Работаю в AI-native подходе: код пишут AI-агенты (Claude Code/Codex), я ставлю задачи, провожу глубокое ревью и отвечаю за качество. Веду проекты от нуля до релиза: архитектура (Clean Architecture), состояние (BLoC/Provider), realtime (WebSocket, чаты, пуши), интеграции (Firebase/IAP/Deep Links), CI/CD. Основатель Ovdix, автор Plumix.",
     "highlight": "Короткие итерации, стабильные релизы",
     "cards": [
       {
@@ -58,12 +58,6 @@
       "tech": "Flutter, Dart, Clean Architecture, BLoC, Supabase, Firebase (Auth/Crashlytics/Analytics), In-App Purchases, Push, Deep Links, Maps, AppsFlyer, CI/CD",
       "link": "Посетить Ovdix"
     },
-    "vertochat": {
-      "title": "VertoChat",
-      "description": "Мессенджер с локальными/p2p/групповыми чатами и AI-переводом текста и голоса. Спроектировал протокол, реализовал платформенные каналы для аудио и оптимизировал потоковую передачу — плавная анимация, низкие задержки и стабильность на бюджетных устройствах.",
-      "tech": "Flutter, Platform Channels, Audio, OpenAI-Translate, Firebase, Push, In-App Purchases, CI/CD",
-      "link": "Посетить VertoChat"
-    },
     "xamarin": {
       "title": "Проекты на Flutter",
       "description": "Кроссплатформенные приложения с упором на UX и производительность: оптимизированные рендер-деревья, отсутствие jank, предсказуемая маршрутизация и кэширование.",
@@ -86,6 +80,12 @@
     "timeline": [
       {
         "period": "2025 — Настоящее время",
+        "title": "Senior Flutter-разработчик",
+        "company": "Стартап — HR-платформа",
+        "description": "Разрабатываю мобильное приложение HR-платформы в AI-native подходе (Claude Code/Codex): realtime-чаты, пуши, платежи, публикация в сторы."
+      },
+      {
+        "period": "2025",
         "title": "Flutter Разработчик и Основатель",
         "company": "Ovdix",
         "description": "Веду мобильную разработку на Flutter, одновременно развивая стартап Ovdix."
@@ -124,7 +124,7 @@
     },
     "summary": {
       "title": "Профессиональное резюме",
-      "content": "Senior Flutter-разработчик с продуктовым фокусом. Быстро разбираюсь в кодовой базе, строю Clean Architecture. Работаю короткими итерациями и стабильно довожу задачи до релиза. Снижаю риски через декомпозицию, код-ревью и синхронизацию с дизайном, аналитикой и PM."
+      "content": "Senior Flutter-разработчик с продуктовым фокусом и AI-native подходом: Claude Code и Codex — мои основные рабочие инструменты, ставлю задачи AI-агентам, провожу глубокое ревью результата и отвечаю за качество. Веду приложения от идеи до публикации в App Store и Google Play: Clean Architecture, realtime-функционал (чаты, WebSocket, пуши), pixel-perfect UI по макетам Figma со сложными анимациями. Работаю короткими итерациями и стабильно довожу задачи до релиза."
     },
     "skills": {
       "title": "Технические навыки",
@@ -135,20 +135,22 @@
       "tools": "Инструменты и DevOps",
       "categories": {
         "architecture": [
-          "Чистая архитектура (Clean Architecture)",
-          "Управление состоянием: BLoC",
+          "Чистая архитектура (Clean Architecture), feature-модули",
+          "Управление состоянием: BLoC, Provider",
           "Навигация: auto_route",
           "Dependency Injection: GetIt, Injectable",
-          "Кодогенерация: freezed, build_runner"
+          "Кодогенерация: freezed, build_runner, OpenAPI Generator"
         ],
         "development": [
+          "AI-native разработка: Claude Code / Codex как основной инструмент — постановка задач агентам, глубокое ревью, контроль качества",
+          "Realtime: WebSocket, Socket.IO — чаты, статусы прочтения/набора, уведомления",
+          "Pixel-perfect UI по макетам Figma, сложные анимации и кастомные жесты (flutter_animate, шторки/bottom sheets)",
           "Работа с сетью: dio + retrofit, REST",
           "Работа с пагинацией: infinite_scroll_pagination",
           "Локализация через slang. Перевод через slang gpt",
           "SQLite: Drift",
           "Platform Channels: Swift/Kotlin",
           "Isolates & Performance Profiling: Flutter DevTools",
-          "Realtime & WebSockets (чат)",
           "Работа с Deep Links",
           "Talker"
         ],
@@ -165,9 +167,10 @@
           "Написание Unit, Widget тестов"
         ],
         "tools": [
+          "Claude Code, Codex — AI-агенты в ежедневной разработке",
           "Android Studio, Xcode, JetBrains Rider",
           "Git & GitFlow",
-          "CI/CD: GitHub Actions / Azure DevOps",
+          "CI/CD: GitHub Actions / GitLab CI / Azure DevOps",
           "App Store Connect / Google Play Console",
           "Firebase Console",
           "Azure + ASP.NET Core (бэк-интеграции)",
@@ -180,6 +183,30 @@
     "experience": {
       "title": "Профессиональный опыт",
       "items": [
+        {
+          "title": "Senior Flutter Разработчик",
+          "company": "Стартап — HR-платформа",
+          "location": "Удалённо",
+          "period": "Ноябрь 2025 — настоящее время",
+          "description": "Разрабатываю мобильное приложение HR-платформы (iOS/Android): вакансии, резюме, отклики, чаты работодателя и соискателя.",
+          "projects": [
+            {
+              "name": "Мобильное приложение HR-платформы (iOS/Android): вакансии, резюме, отклики, чаты",
+              "responsibilities": [
+                "Веду AI-native процесс разработки: основной объём кода пишут AI-агенты (Claude Code/Codex) — ставлю задачи, провожу глубокое ревью результатов и отвечаю за качество",
+                "Реализовал realtime-чаты на WebSocket (Socket.IO): доставка и прочтение сообщений, статусы набора текста, синхронизация состояния между экранами",
+                "Построил систему push-уведомлений (FCM): центр уведомлений, навигация из пушей и deep links в нужные разделы, экран настроек уведомлений",
+                "Собрал pixel-perfect UI по макетам Figma: редизайн светлой/тёмной темы, кастомные bottom sheets и шторки, сложные анимации, дизайн-система текстовых стилей и контролов",
+                "Спроектировал feature-модульную Clean Architecture поверх легаси: миграция GetX → BLoC, переход на auto_route, выделил генерируемый OpenAPI-клиент в отдельный пакет",
+                "Подключил платежи: In-App Purchases (iOS/Android) и внешние платёжные провайдеры",
+                "Реализовал флоу модерации вакансий и резюме, отзывы, страницы компаний",
+                "Настроил CI/CD на GitLab (формат, анализ, тесты на каждый MR) и релизы в App Store / Google Play",
+                "Интегрировал AppsFlyer, Facebook SDK и Firebase (Analytics, Crashlytics, Remote Config — механизм force update)",
+                "Локализация приложения на 5+ языков (slang)"
+              ]
+            }
+          ]
+        },
         {
           "title": "Middle/Senior Flutter Разработчик",
           "company": "DD Planet",
@@ -287,6 +314,11 @@
       "title": "Опубликованные статьи",
       "items": [
         {
+          "year": "2026",
+          "title": "Plumix: как я переписываю Flutter на C# — вместе с ИИ",
+          "link": "https://habr.com/ru/articles/1056568/"
+        },
+        {
           "year": "2025",
           "title": "Простая локализация .NET приложений с помощью Slang.Net",
           "link": "https://habr.com/ru/articles/874066/"
@@ -307,12 +339,6 @@
       "title": "Ключевые проекты",
       "items": [
         {
-          "name": "VertoChat",
-          "description": "Мессенджер с AI-переводом текста и голосовых сообщений. Низкая задержка аудио, плавные анимации, стабильная работа на слабых устройствах.",
-          "technologies": "Flutter, Platform Channels, Audio/Video, OpenAI, Firebase, Push, IAP, CI/CD",
-          "link": "https://verto.chat"
-        },
-        {
           "name": "Ovdix",
           "description": "Многоязычный маркетплейс с автопереводом объявлений и чатов. Прозрачные метрики (Crashlytics/Analytics), быстрые релизы, продуманная навигация.",
           "technologies": "Flutter, Supabase, Firebase, Maps, IAP, Push, Deep Links, AppsFlyer, CI/CD",
@@ -326,7 +352,7 @@
         },
         {
           "name": "Plumix",
-          "description": "UI-фреймворк для .NET, вдохновлённый Flutter. Декларативный виджетный подход в C# с архитектурой Widget/Element/RenderObject поверх Avalonia.",
+          "description": "Open-source UI-фреймворк для .NET, вдохновлённый Flutter. Декларативный виджетный подход в C# с архитектурой Widget/Element/RenderObject поверх Avalonia. Разрабатывается в связке с AI-агентами (Claude Code/Codex).",
           "technologies": "C#, .NET, Avalonia",
           "link": "https://plumix.net"
         },

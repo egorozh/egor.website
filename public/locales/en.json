@@ -19,12 +19,12 @@
     "greeting": "Hi, I'm",
     "name": "Egor Zheludkov",
     "title": "Senior Flutter Developer",
-    "description": "Senior Flutter developer who takes projects from idea to App Store. Built Ovdix and VertoChat from scratch. I ramp up quickly in any codebase, speed up release cycles, and keep crash rates low.",
+    "description": "Senior Flutter developer with an AI-native mindset — I take projects from idea to the app stores using Claude Code and Codex as my primary tools. Author of Ovdix and Plumix. I ramp up quickly in any codebase, speed up release cycles, and keep crash rates low.",
     "cta": "Get in touch"
   },
   "about": {
     "title": "About",
-    "description": "I'm a Senior Flutter developer with a strong product focus. Building commercial apps since 2018 (desktop → mobile since 2022). I take products from zero to release: architecture (Clean Architecture), state (BLoC), navigation (auto_route), integrations (Firebase/Maps/IAP/Push), CI/CD (GitHub Actions), analytics (Crashlytics/Analytics/AppsFlyer). Founder of Ovdix and VertoChat.",
+    "description": "I'm a Senior Flutter developer with a strong product focus. Building commercial apps since 2018 (desktop → mobile since 2022). I work AI-native: AI agents (Claude Code/Codex) write the code while I set the tasks, review deeply, and own the quality. I take products from zero to release: architecture (Clean Architecture), state (BLoC/Provider), realtime (WebSocket, chats, push), integrations (Firebase/IAP/Deep Links), CI/CD. Founder of Ovdix, author of Plumix.",
     "highlight": "Short iterations, stable releases",
     "cards": [
       {
@@ -58,12 +58,6 @@
       "tech": "Flutter, Dart, Clean Architecture, BLoC, Supabase, Firebase (Auth/Crashlytics/Analytics), In-App Purchases, Push, Deep Links, Maps, AppsFlyer, CI/CD",
       "link": "Visit Ovdix"
     },
-    "vertochat": {
-      "title": "VertoChat",
-      "description": "Messenger with local/p2p/group chats and AI translation of text and voice. Designed the protocol, implemented platform channels for audio, and optimized streaming — smooth animations, low latency, and stability on low-end devices.",
-      "tech": "Flutter, Platform Channels, Audio, OpenAI translation, Firebase, Push, In-App Purchases, CI/CD",
-      "link": "Visit VertoChat"
-    },
     "xamarin": {
       "title": "Flutter Projects",
       "description": "Cross-platform apps focused on UX and performance: optimized render trees, no jank, predictable routing, and caching.",
@@ -86,6 +80,12 @@
     "timeline": [
       {
         "period": "2025 – Present",
+        "title": "Senior Flutter Developer",
+        "company": "Startup — HR platform",
+        "description": "Building an HR platform mobile app the AI-native way (Claude Code/Codex): realtime chats, push notifications, payments, store releases."
+      },
+      {
+        "period": "2025",
         "title": "Flutter Developer & Founder",
         "company": "Ovdix",
         "description": "Lead mobile development in Flutter while founding and growing the Ovdix startup."
@@ -124,7 +124,7 @@
     },
     "summary": {
       "title": "Professional Summary",
-      "content": "Senior Flutter developer with a product focus. I ramp up fast in any codebase and establish Clean Architecture. I work in short iterations and reliably bring features to release. I keep things on track through decomposition, code reviews, and close collaboration with design, analytics, and PM."
+      "content": "Senior Flutter developer with a product focus and an AI-native mindset: Claude Code and Codex are my primary tools — I set tasks for AI agents, review their output deeply, and own the quality. I take apps from idea to App Store and Google Play releases: Clean Architecture, realtime features (chats, WebSocket, push), pixel-perfect UI from Figma with complex animations. I work in short iterations and reliably bring features to release."
     },
     "skills": {
       "title": "Technical Skills",
@@ -135,20 +135,22 @@
       "tools": "Tools & DevOps",
       "categories": {
         "architecture": [
-          "Clean Architecture",
-          "State management: BLoC",
+          "Clean Architecture, feature modules",
+          "State management: BLoC, Provider",
           "Navigation: auto_route",
           "Dependency Injection: GetIt, Injectable",
-          "Code generation: freezed, build_runner"
+          "Code generation: freezed, build_runner, OpenAPI Generator"
         ],
         "development": [
+          "AI-native development: Claude Code / Codex as primary tools — task setting for agents, deep review, quality ownership",
+          "Realtime: WebSocket, Socket.IO — chats, read/typing statuses, notifications",
+          "Pixel-perfect UI from Figma, complex animations and custom gestures (flutter_animate, draggable/bottom sheets)",
           "Networking: dio + retrofit, REST",
           "Pagination: infinite_scroll_pagination",
           "Localization: slang, slang gpt for translation",
           "SQLite: Drift",
           "Platform Channels: Swift/Kotlin",
           "Isolates & Performance Profiling: Flutter DevTools",
-          "Realtime & WebSockets (chat)",
           "Deep Links",
           "Talker"
         ],
@@ -165,9 +167,10 @@
           "Unit, Widget tests"
         ],
         "tools": [
+          "Claude Code, Codex — AI agents in day-to-day development",
           "Android Studio, Xcode, JetBrains Rider",
           "Git & GitFlow",
-          "CI/CD: GitHub Actions / Azure DevOps",
+          "CI/CD: GitHub Actions / GitLab CI / Azure DevOps",
           "App Store Connect / Google Play Console",
           "Firebase Console",
           "Azure + ASP.NET Core (backend integrations)",
@@ -180,6 +183,30 @@
     "experience": {
       "title": "Professional Experience",
       "items": [
+        {
+          "title": "Senior Flutter Developer",
+          "company": "Startup — HR platform",
+          "location": "Remote",
+          "period": "November 2025 – Present",
+          "description": "Building an HR platform mobile app (iOS/Android): vacancies, CVs, applications, employer and candidate chats.",
+          "projects": [
+            {
+              "name": "HR platform mobile app (iOS/Android): vacancies, CVs, applications, chats",
+              "responsibilities": [
+                "Run an AI-native development process: most of the code is written by AI agents (Claude Code/Codex) — I set the tasks, review the results deeply, and own the quality",
+                "Implemented realtime chats over WebSocket (Socket.IO): message delivery and read receipts, typing indicators, state sync across screens",
+                "Built the push notification system (FCM): notification center, navigation from pushes and deep links into the right sections, notification settings screen",
+                "Delivered pixel-perfect UI from Figma: light/dark theme redesign, custom bottom sheets and draggable panels, complex animations, a design system of text styles and controls",
+                "Designed a feature-module Clean Architecture over legacy code: GetX → BLoC migration, move to auto_route, extracted a generated OpenAPI client into a separate package",
+                "Integrated payments: In-App Purchases (iOS/Android) and external payment providers",
+                "Implemented moderation flows for vacancies and CVs, reviews, and company pages",
+                "Set up GitLab CI/CD (format, analyze, tests on every MR) and releases to App Store / Google Play",
+                "Integrated AppsFlyer, Facebook SDK, and Firebase (Analytics, Crashlytics, Remote Config — force-update mechanism)",
+                "Localized the app into 5+ languages (slang)"
+              ]
+            }
+          ]
+        },
         {
           "title": "Middle/Senior Flutter Developer",
           "company": "DD Planet",
@@ -287,6 +314,11 @@
       "title": "Published Articles",
       "items": [
         {
+          "year": "2026",
+          "title": "Plumix: how I'm rewriting Flutter in C# — together with AI",
+          "link": "https://habr.com/ru/articles/1056568/"
+        },
+        {
           "year": "2025",
           "title": "Simple localization of .NET apps with Slang.Net",
           "link": "https://habr.com/ru/articles/874066/"
@@ -307,12 +339,6 @@
       "title": "Key Projects",
       "items": [
         {
-          "name": "VertoChat",
-          "description": "Messenger with AI-powered translation of text and voice messages. Low audio latency, smooth animations, stable on low-end devices.",
-          "technologies": "Flutter, Platform Channels, Audio/Video, OpenAI, Firebase, Push, IAP, CI/CD",
-          "link": "https://verto.chat"
-        },
-        {
           "name": "Ovdix",
           "description": "Multilingual marketplace with auto-translation of listings and chats. Transparent metrics (Crashlytics/Analytics), fast releases, thoughtful navigation.",
           "technologies": "Flutter, Supabase, Firebase, Maps, IAP, Push, Deep Links, AppsFlyer, CI/CD",
@@ -326,7 +352,7 @@
         },
         {
           "name": "Plumix",
-          "description": "Flutter-inspired UI framework for .NET. Declarative widget-based UIs in C# with Flutter's Widget/Element/RenderObject architecture running on top of Avalonia.",
+          "description": "Open-source Flutter-inspired UI framework for .NET. Declarative widget-based UIs in C# with Flutter's Widget/Element/RenderObject architecture running on top of Avalonia. Developed together with AI agents (Claude Code/Codex).",
           "technologies": "C#, .NET, Avalonia",
           "link": "https://plumix.net"
         },

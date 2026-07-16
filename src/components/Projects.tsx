@@ -16,14 +16,6 @@ const Projects = () => {
       featured: true,
     },
     {
-      title: t('projects.vertochat.title'),
-      description: t('projects.vertochat.description'),
-      tech: t('projects.vertochat.tech'),
-      link: 'https://verto.chat',
-      linkText: t('projects.vertochat.link'),
-      featured: true,
-    },
-    {
       title: t('projects.xamarin.title'),
       description: t('projects.xamarin.description'),
       tech: t('projects.xamarin.tech'),
