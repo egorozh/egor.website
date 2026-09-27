@@ -2,10 +2,13 @@ import type { SVGProps } from 'react';
 
 type P = SVGProps<SVGSVGElement>;
 
-/** Four panes in perspective — a nod to the hardware start button. */
+/** A tiny start screen: one medium tile, two small ones and a wide one. */
 export const StartGlyph = (p: P) => (
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...p}>
-    <path d="M3 5.2 10.4 4.1v7.2H3zM11.6 3.9 21 2.5v8.8h-9.4zM3 12.7h7.4v7.2L3 18.8zM11.6 12.7H21v8.8l-9.4-1.4z" />
+    <rect x="3" y="3" width="12.2" height="12.2" />
+    <rect x="16.6" y="3" width="5.4" height="5.4" />
+    <rect x="16.6" y="9.8" width="5.4" height="5.4" />
+    <rect x="3" y="16.6" width="19" height="5.4" />
   </svg>
 );
 
