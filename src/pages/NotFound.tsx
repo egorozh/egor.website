@@ -1,26 +1,19 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useTranslation } from 'react-i18next';
+import '@/metro/metro.css';
 
 const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
-
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language?.startsWith('ru') ? 'ru' : 'en';
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
-      </div>
-    </div>
+    <main className="nf">
+      <div className="app-title">{t('hero.name')}</div>
+      <h1 className="page-title">404</h1>
+      <p className="lead">{t('metro.notFound.title')}</p>
+      <p className="body">{t('metro.notFound.text')}</p>
+      <a className="m-btn" href={`/${lang}`}>
+        {t('metro.notFound.home')}
+      </a>
+    </main>
   );
 };
 

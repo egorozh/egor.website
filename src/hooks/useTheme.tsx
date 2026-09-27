@@ -1,46 +1,83 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useLayoutEffect, useState, ReactNode } from 'react';
+import { AccentId, DEFAULT_ACCENT, accentHex, isAccent } from '@/metro/palette';
 
-type Theme = 'light' | 'dark';
+export type Theme = 'light' | 'dark';
 
-interface ThemeContextValue {
+interface SettingsValue {
   theme: Theme;
+  accent: AccentId;
+  liveTiles: boolean;
   toggleTheme: () => void;
   setTheme: (t: Theme) => void;
+  setAccent: (a: AccentId) => void;
+  setLiveTiles: (v: boolean) => void;
 }
 
-const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
+const SettingsContext = createContext<SettingsValue | undefined>(undefined);
 
-const STORAGE_KEY = 'theme';
+const read = (key: string) => {
+  try {
+    return window.localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+};
+
+const write = (key: string, value: string) => {
+  try {
+    window.localStorage.setItem(key, value);
+  } catch {
+    /* storage unavailable — settings just won't persist */
+  }
+};
 
 const getInitialTheme = (): Theme => {
   if (typeof window === 'undefined') return 'dark';
-  const stored = window.localStorage.getItem(STORAGE_KEY) as Theme | null;
+  const stored = read('theme');
   if (stored === 'light' || stored === 'dark') return stored;
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+};
+
+const getInitialAccent = (): AccentId => {
+  const stored = typeof window === 'undefined' ? null : read('accent');
+  return isAccent(stored) ? stored : DEFAULT_ACCENT;
 };
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setThemeState] = useState<Theme>(getInitialTheme);
+  const [theme, setTheme] = useState<Theme>(getInitialTheme);
+  const [accent, setAccent] = useState<AccentId>(getInitialAccent);
+  const [liveTiles, setLiveTiles] = useState<boolean>(() => read('liveTiles') !== 'off');
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const root = document.documentElement;
+    root.style.background = '';
     root.classList.toggle('dark', theme === 'dark');
+    root.dataset.theme = theme;
     root.style.colorScheme = theme;
-    window.localStorage.setItem(STORAGE_KEY, theme);
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#000000' : '#ffffff');
+    write('theme', theme);
   }, [theme]);
 
-  const setTheme = (t: Theme) => setThemeState(t);
-  const toggleTheme = () => setThemeState((p) => (p === 'dark' ? 'light' : 'dark'));
+  useLayoutEffect(() => {
+    document.documentElement.style.setProperty('--accent', accentHex(accent));
+    write('accent', accent);
+  }, [accent]);
+
+  useEffect(() => {
+    write('liveTiles', liveTiles ? 'on' : 'off');
+  }, [liveTiles]);
+
+  const toggleTheme = () => setTheme((p) => (p === 'dark' ? 'light' : 'dark'));
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
+    <SettingsContext.Provider value={{ theme, accent, liveTiles, toggleTheme, setTheme, setAccent, setLiveTiles }}>
       {children}
-    </ThemeContext.Provider>
+    </SettingsContext.Provider>
   );
 };
 
 export const useTheme = () => {
-  const ctx = useContext(ThemeContext);
+  const ctx = useContext(SettingsContext);
   if (!ctx) throw new Error('useTheme must be used within ThemeProvider');
   return ctx;
 };

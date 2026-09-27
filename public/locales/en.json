@@ -383,5 +383,139 @@
         }
       ]
     }
+  },
+  "metro": {
+    "tiles": {
+      "about": "About me",
+      "experience": "Experience",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Mail",
+      "videos": "Videos",
+      "articles": "Articles",
+      "resume": "Resume",
+      "settings": "Settings",
+      "blocks": "Blocks",
+      "theme": "Theme",
+      "language": "Language"
+    },
+    "tile": {
+      "yearsInCode_one": "year in code",
+      "yearsInCode_other": "years in code",
+      "writeMe": "write me — I answer fast",
+      "onHabr": "articles"
+    },
+    "apps": {
+      "about": "about me",
+      "experience": "experience",
+      "skills": "skills",
+      "projects": "projects",
+      "contact": "contact",
+      "videos": "videos",
+      "articles": "articles",
+      "resume": "resume",
+      "settings": "settings",
+      "blocks": "blocks"
+    },
+    "pivots": {
+      "timeline": "timeline",
+      "stack": "stack",
+      "architecture": "architecture",
+      "development": "development",
+      "integrations": "integrations",
+      "testing": "testing",
+      "tools": "tools",
+      "summary": "summary",
+      "experience": "experience",
+      "skills": "skills",
+      "projects": "projects",
+      "articles": "articles"
+    },
+    "about": {
+      "strengths": "what I bring"
+    },
+    "projects": {
+      "stack": "built with"
+    },
+    "contact": {
+      "write": "send an email",
+      "mail": "email",
+      "copy": "copy",
+      "copied": "copied"
+    },
+    "videos": {
+      "open": "YouTube"
+    },
+    "resume": {
+      "print": "print / pdf"
+    },
+    "settings": {
+      "background": "Background",
+      "dark": "dark",
+      "light": "light",
+      "accent": "Accent colour",
+      "language": "Language",
+      "liveTiles": "Live tiles",
+      "on": "On",
+      "off": "Off"
+    },
+    "accents": {
+      "lime": "lime",
+      "green": "green",
+      "emerald": "emerald",
+      "teal": "teal",
+      "cyan": "cyan",
+      "cobalt": "cobalt",
+      "indigo": "indigo",
+      "violet": "violet",
+      "pink": "pink",
+      "magenta": "magenta",
+      "crimson": "crimson",
+      "red": "red",
+      "orange": "orange",
+      "amber": "amber",
+      "yellow": "yellow",
+      "brown": "brown",
+      "olive": "olive",
+      "steel": "steel",
+      "mauve": "mauve",
+      "taupe": "taupe"
+    },
+    "blocks": {
+      "next": "next",
+      "score": "score",
+      "lines": "lines",
+      "level": "level",
+      "best": "best",
+      "over": "game over",
+      "paused": "pause",
+      "again": "play again",
+      "resume": "continue",
+      "left": "left",
+      "right": "right",
+      "rotate": "rotate",
+      "down": "down",
+      "drop": "drop",
+      "hint": "← → move · ↑ rotate · ↓ faster · space drops · P pauses"
+    },
+    "search": {
+      "placeholder": "search apps, projects, skills…",
+      "apps": "apps",
+      "projects": "projects",
+      "experience": "experience",
+      "skills": "skills",
+      "articles": "articles",
+      "nothing": "Nothing found."
+    },
+    "ui": {
+      "back": "Back",
+      "start": "Start",
+      "search": "Search"
+    },
+    "notFound": {
+      "title": "page not found",
+      "text": "There is no such page. But there is a start screen.",
+      "home": "to start"
+    }
   }
 }

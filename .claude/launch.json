@@ -4,8 +4,15 @@
     {
       "name": "dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "port": 8080
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "port": 8080,
+      "autoPort": true,
+      "env": {
+        "VITE_CACHE_DIR": ".vite-cache"
+      }
     }
   ]
 }

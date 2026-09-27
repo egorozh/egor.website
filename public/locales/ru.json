@@ -383,5 +383,141 @@
         }
       ]
     }
+  },
+  "metro": {
+    "tiles": {
+      "about": "Обо мне",
+      "experience": "Опыт",
+      "skills": "Навыки",
+      "projects": "Проекты",
+      "contact": "Почта",
+      "videos": "Видео",
+      "articles": "Статьи",
+      "resume": "Резюме",
+      "settings": "Настройки",
+      "blocks": "Блоки",
+      "theme": "Тема",
+      "language": "Язык"
+    },
+    "tile": {
+      "yearsInCode_one": "год в коде",
+      "yearsInCode_few": "года в коде",
+      "yearsInCode_many": "лет в коде",
+      "yearsInCode_other": "лет в коде",
+      "writeMe": "напишите — отвечаю быстро",
+      "onHabr": "статьи"
+    },
+    "apps": {
+      "about": "обо мне",
+      "experience": "опыт",
+      "skills": "навыки",
+      "projects": "проекты",
+      "contact": "контакты",
+      "videos": "видео",
+      "articles": "статьи",
+      "resume": "резюме",
+      "settings": "настройки",
+      "blocks": "блоки"
+    },
+    "pivots": {
+      "timeline": "хронология",
+      "stack": "стек",
+      "architecture": "архитектура",
+      "development": "разработка",
+      "integrations": "интеграции",
+      "testing": "тесты",
+      "tools": "инструменты",
+      "summary": "кратко",
+      "experience": "опыт",
+      "skills": "навыки",
+      "projects": "проекты",
+      "articles": "статьи"
+    },
+    "about": {
+      "strengths": "чем полезен"
+    },
+    "projects": {
+      "stack": "технологии"
+    },
+    "contact": {
+      "write": "написать письмо",
+      "mail": "почта",
+      "copy": "копировать",
+      "copied": "скопировано"
+    },
+    "videos": {
+      "open": "YouTube"
+    },
+    "resume": {
+      "print": "печать / pdf"
+    },
+    "settings": {
+      "background": "Фон",
+      "dark": "тёмный",
+      "light": "светлый",
+      "accent": "Цвет элементов",
+      "language": "Язык",
+      "liveTiles": "Живые плитки",
+      "on": "Вкл.",
+      "off": "Откл."
+    },
+    "accents": {
+      "lime": "лайм",
+      "green": "зелёный",
+      "emerald": "изумрудный",
+      "teal": "бирюзовый",
+      "cyan": "голубой",
+      "cobalt": "кобальт",
+      "indigo": "индиго",
+      "violet": "фиолетовый",
+      "pink": "розовый",
+      "magenta": "пурпурный",
+      "crimson": "малиновый",
+      "red": "красный",
+      "orange": "оранжевый",
+      "amber": "янтарный",
+      "yellow": "жёлтый",
+      "brown": "коричневый",
+      "olive": "оливковый",
+      "steel": "стальной",
+      "mauve": "лиловый",
+      "taupe": "серо-бежевый"
+    },
+    "blocks": {
+      "next": "далее",
+      "score": "очки",
+      "lines": "линии",
+      "level": "уровень",
+      "best": "рекорд",
+      "over": "игра окончена",
+      "paused": "пауза",
+      "again": "ещё раз",
+      "resume": "продолжить",
+      "left": "влево",
+      "right": "вправо",
+      "rotate": "повернуть",
+      "down": "вниз",
+      "drop": "сбросить",
+      "hint": "← → двигать · ↑ повернуть · ↓ быстрее · пробел сбросить · P пауза"
+    },
+    "search": {
+      "placeholder": "приложения, проекты, навыки…",
+      "apps": "приложения",
+      "projects": "проекты",
+      "experience": "опыт",
+      "skills": "навыки",
+      "articles": "статьи",
+      "nothing": "Ничего не нашлось."
+    },
+    "ui": {
+      "back": "Назад",
+      "start": "Пуск",
+      "search": "Поиск"
+    },
+    "notFound": {
+      "title": "страница не найдена",
+      "text": "Такой страницы нет. Зато есть начальный экран.",
+      "home": "на начальный экран"
+    }
   }
 }
