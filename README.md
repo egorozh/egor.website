@@ -62,12 +62,10 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/a8ecb399-5835-43b3-88ca-7c7324615269) and click on Share -> Publish.
+The site is hosted on **GitHub Pages**: https://egorozh.github.io/egor.website/
 
-## Can I connect a custom domain to my Lovable project?
+Every push to the `release` branch triggers `.github/workflows/deploy-github-pages.yml`,
+which builds the app with `VITE_BASE=/egor.website/` and publishes `dist/`.
+Repository settings → Pages → Source must be set to **GitHub Actions**.
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+When a custom domain is attached (Settings → Pages → Custom domain), change `VITE_BASE` in the workflow to `/`.

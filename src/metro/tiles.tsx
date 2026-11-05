@@ -6,6 +6,7 @@ import { Cycle, Flip, Peek } from './live';
 import type { TileSpec } from './Tile';
 import { Article, GITHUB, LINKEDIN, AVATAR, ResumeProject, STACK, useContent, yearsInCode } from './content';
 import { BlocksGlyph } from './glyphs';
+import { withBase } from '@/lib/utils';
 
 const useClock = () => {
   const [now, setNow] = useState(() => new Date());
@@ -77,7 +78,7 @@ export function useTiles(lang: string): TileSpec[] {
   const projects = list<ResumeProject>('resume.projects.items');
   const articles = list<Article>('resume.articles.items');
   const years = yearsInCode();
-  const base = `/${lang}`;
+  const base = withBase(`/${lang}`);
   const tech = STACK.flatMap((g) => g.items).filter((v, i, a) => a.indexOf(v) === i);
   const ovdix = projects.find((p) => p.name === 'Ovdix');
   const plumix = projects.find((p) => p.name === 'Plumix');
@@ -246,7 +247,7 @@ export function useTiles(lang: string): TileSpec[] {
     {
       key: 'lang',
       size: 'small',
-      href: `/${lang === 'ru' ? 'en' : 'ru'}`,
+      href: withBase(`/${lang === 'ru' ? 'en' : 'ru'}`),
       action: 'lang',
       label: t('metro.tiles.language'),
       content: (

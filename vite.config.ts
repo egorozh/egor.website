@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // "/" at a domain root; the GitHub Pages workflow sets "/egor.website/".
+  base: process.env.VITE_BASE || "/",
   cacheDir: process.env.VITE_CACHE_DIR || "node_modules/.vite",
   server: {
     host: "::",

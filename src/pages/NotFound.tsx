@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import '@/metro/metro.css';
+import { withBase } from '@/lib/utils';
 
 const NotFound = () => {
   const { t, i18n } = useTranslation();
@@ -10,7 +11,7 @@ const NotFound = () => {
       <h1 className="page-title">404</h1>
       <p className="lead">{t('metro.notFound.title')}</p>
       <p className="body">{t('metro.notFound.text')}</p>
-      <a className="m-btn" href={`/${lang}`}>
+      <a className="m-btn" href={withBase(`/${lang}`)}>
         {t('metro.notFound.home')}
       </a>
     </main>

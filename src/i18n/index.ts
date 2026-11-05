@@ -2,6 +2,7 @@ import i18n from 'i18next';
 import Backend from 'i18next-http-backend';
 import {initReactI18next} from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import { withBase } from '@/lib/utils';
 
 export type Language = 'en' | 'ru';
 
@@ -18,7 +19,7 @@ i18n
             escapeValue: false,
         },
         backend: {
-            loadPath: '/locales/{{lng}}.json',
+            loadPath: withBase('/locales/{{lng}}.json'),
         },
         detection: {
             order: ['localStorage', 'navigator', 'htmlTag'],

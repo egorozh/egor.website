@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { withBase } from '@/lib/utils';
 
 export type AppId =
   | 'about'
@@ -32,7 +33,7 @@ export const EMAIL = 'egorozh.dev@gmail.com';
 export const GITHUB = 'https://github.com/egorozh';
 export const LINKEDIN = 'https://www.linkedin.com/in/egorozh/';
 export const VIDEO_ID = '95l-KzxW9tM';
-export const AVATAR = '/avatar.jpg';
+export const AVATAR = withBase('/avatar.jpg');
 
 export interface ResumeProject {
   name: string;

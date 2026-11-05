@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {Language, supportedLanguages} from '@/i18n';
+import { stripBase } from '@/lib/utils';
 
 export const useLanguageWithI18n = () => {
   const { t, i18n } = useTranslation();
@@ -23,7 +24,7 @@ export const useLanguageWithI18n = () => {
     const handleLanguageChange = (lng: string) => {
       if (lng !== currentLangParam && supportedLanguages.includes(lng as Language)) {
         // Get current path without language prefix
-        const currentPath = window.location.pathname;
+        const currentPath = stripBase(window.location.pathname);
         const pathWithoutLang = currentPath.replace(/^\/[^/]+/, '') || '/';
         
         // Navigate to new URL with language prefix
