@@ -21,7 +21,7 @@
         "vite",
         "preview",
         "--base",
-        "/egor.website/",
+        "/",
         "--port",
         "4173",
         "--strictPort"

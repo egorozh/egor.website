@@ -62,10 +62,11 @@ This project is built with:
 
 ## How can I deploy this project?
 
-The site is hosted on **GitHub Pages**: https://egorozh.github.io/egor.website/
+The site is hosted on **GitHub Pages** with the custom domain https://egor.website/
+(DNS at Beget: four `@ A 185.199.108-111.153` records and `www` pointing to `egorozh.github.io`).
 
 Every push to the `release` branch triggers `.github/workflows/deploy-github-pages.yml`,
-which builds the app with `VITE_BASE=/egor.website/` and publishes `dist/`.
+which builds the app and publishes `dist/`.
 Repository settings → Pages → Source must be set to **GitHub Actions**.
 
-When a custom domain is attached (Settings → Pages → Custom domain), change `VITE_BASE` in the workflow to `/`.
+Without the custom domain the site would live at `/egor.website/` — set `VITE_BASE` in the workflow to that path.

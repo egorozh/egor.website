@@ -33,11 +33,11 @@ jobs:
         run: npm ci
 
       - name: Build project
-        # Project site lives at https://<owner>.github.io/<repo>/.
-        # When a custom domain is attached, set VITE_BASE to "/".
+        # Served from the custom domain https://egor.website/ (root path).
+        # Without a custom domain the site lives at /<repo>/ — set VITE_BASE to that.
         run: npm run build
         env:
-          VITE_BASE: /${{ github.event.repository.name }}/
+          VITE_BASE: /
 
       - name: SPA fallback for client-side routes
         run: cp dist/index.html dist/404.html
