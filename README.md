@@ -62,11 +62,17 @@ This project is built with:
 
 ## How can I deploy this project?
 
-The site is hosted on **GitHub Pages** with the custom domain https://egor.website/
-(DNS at Beget: four `@ A 185.199.108-111.153` records and `www` pointing to `egorozh.github.io`).
+The site is hosted on **Cloudflare Pages** (project `egor-website`) at https://egor.website/.
+DNS for `egor.website` is managed in Cloudflare; mail (MX) still goes to Beget.
 
-Every push to the `release` branch triggers `.github/workflows/deploy-github-pages.yml`,
-which builds the app and publishes `dist/`.
-Repository settings → Pages → Source must be set to **GitHub Actions**.
+Every push to the `release` branch triggers `.github/workflows/deploy-cloudflare-pages.yml`,
+which builds the app and uploads `dist/` with Wrangler.
 
-Without the custom domain the site would live at `/egor.website/` — set `VITE_BASE` in the workflow to that path.
+Required GitHub repository secrets:
+
+- `CLOUDFLARE_API_TOKEN` — API token with the **Account → Cloudflare Pages → Edit** permission
+- `CLOUDFLARE_ACCOUNT_ID` — your Cloudflare account ID
+
+Custom domains are attached in the Cloudflare dashboard: Workers & Pages → `egor-website` → Custom domains.
+
+To serve the site from a sub-path instead of a domain root, build with `VITE_BASE=/<path>/`.
